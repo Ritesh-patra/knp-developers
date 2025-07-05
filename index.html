@@ -4,1270 +4,507 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KNP Developers - Parshuram Bhuban | India's Most Prestigious Township</title>
+    <title>KNP Developer - Premium Township in Berhampur</title>
+    <meta name="description"
+        content="KNP Developer presents the first 13-floor premium township in Berhampur with 2.5 BHK, 3 BHK flats and luxury duplex houses with modern amenities.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
                     colors: {
-                        'luxury-black': '#0A0A0A',
-                        'luxury-gray': '#1A1A1A',
-                        'luxury-gold': '#D4AF37',
-                        'luxury-gold-light': '#F7E98E',
-                        'luxury-silver': '#C0C0C0',
-                        'luxury-bronze': '#CD7F32',
-                        'luxury-white': '#FAFAFA',
-                        'luxury-cream': '#F5F5DC',
-                        'royal-blue': '#002366',
-                        'royal-purple': '#663399',
-                        'emerald': '#50C878',
-                        'crimson': '#DC143C'
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                            950: '#082f49',
+                        },
+                        accent: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                            800: '#92400e',
+                            900: '#78350f',
+                        }
                     },
                     animation: {
-                        'luxury-fade': 'luxuryFade 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
-                        'luxury-slide-up': 'luxurySlideUp 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
-                        'luxury-slide-left': 'luxurySlideLeft 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
-                        'luxury-slide-right': 'luxurySlideRight 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
-                        'luxury-scale': 'luxuryScale 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
-                        'luxury-glow': 'luxuryGlow 3s ease-in-out infinite alternate',
-                        'luxury-float': 'luxuryFloat 6s ease-in-out infinite',
-                        'luxury-rotate': 'luxuryRotate 20s linear infinite',
-                        'luxury-pulse': 'luxuryPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                        'luxury-bounce': 'luxuryBounce 2s infinite',
-                        'text-shimmer': 'textShimmer 3s ease-in-out infinite',
-                        'gradient-x': 'gradientX 15s ease infinite',
-                        'gradient-y': 'gradientY 15s ease infinite',
-                        'gradient-xy': 'gradientXY 15s ease infinite'
+                        'fade-in': 'fadeIn 0.8s ease-out forwards',
+                        'slide-up': 'slideUp 1s ease-out forwards',
+                        'slide-in-left': 'slideInLeft 0.8s ease-out forwards',
+                        'slide-in-right': 'slideInRight 0.8s ease-out forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'bounce-slow': 'bounce 2s infinite',
                     },
-                    backgroundImage: {
-                        'luxury-gradient': 'linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 25%, #D4AF37 50%, #1A1A1A 75%, #0A0A0A 100%)',
-                        'gold-gradient': 'linear-gradient(135deg, #D4AF37 0%, #F7E98E 50%, #D4AF37 100%)',
-                        'royal-gradient': 'linear-gradient(135deg, #002366 0%, #663399 50%, #002366 100%)',
-                        'premium-gradient': 'linear-gradient(135deg, #0A0A0A 0%, #D4AF37 25%, #C0C0C0 50%, #D4AF37 75%, #0A0A0A 100%)'
-                    },
-                    fontFamily: {
-                        'luxury': ['Playfair Display', 'serif'],
-                        'modern': ['Inter', 'sans-serif'],
-                        'elegant': ['Cormorant Garamond', 'serif']
-                    },
-                    boxShadow: {
-                        'luxury': '0 25px 50px -12px rgba(212, 175, 55, 0.25)',
-                        'luxury-lg': '0 35px 60px -12px rgba(212, 175, 55, 0.35)',
-                        'luxury-xl': '0 45px 80px -12px rgba(212, 175, 55, 0.45)',
-                        'glow': '0 0 30px rgba(212, 175, 55, 0.6)',
-                        'glow-lg': '0 0 50px rgba(212, 175, 55, 0.8)'
+                    backdropBlur: {
+                        xs: '2px',
                     }
                 }
             }
         }
     </script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
 
     <style>
-        @keyframes luxuryFade {
+        @keyframes fadeIn {
             from {
                 opacity: 0;
+                transform: translateY(40px);
             }
-
-            to {
-                opacity: 1;
-            }
-        }
-
-        @keyframes luxurySlideUp {
-            from {
-                opacity: 0;
-                transform: translateY(100px);
-            }
-
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
 
-        @keyframes luxurySlideLeft {
+        @keyframes slideUp {
             from {
                 opacity: 0;
-                transform: translateX(-100px);
+                transform: translateY(60px);
             }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-60px);
+            }
             to {
                 opacity: 1;
                 transform: translateX(0);
             }
         }
 
-        @keyframes luxurySlideRight {
+        @keyframes slideInRight {
             from {
                 opacity: 0;
-                transform: translateX(100px);
+                transform: translateX(60px);
             }
-
             to {
                 opacity: 1;
                 transform: translateX(0);
             }
         }
 
-        @keyframes luxuryScale {
-            from {
-                opacity: 0;
-                transform: scale(0.8);
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
             }
-
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-
-        @keyframes luxuryGlow {
-            from {
-                box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
-            }
-
-            to {
-                box-shadow: 0 0 40px rgba(212, 175, 55, 0.8), 0 0 60px rgba(212, 175, 55, 0.4);
-            }
-        }
-
-        @keyframes luxuryFloat {
-
-            0%,
-            100% {
-                transform: translateY(0px) rotate(0deg);
-            }
-
-            33% {
-                transform: translateY(-30px) rotate(120deg);
-            }
-
-            66% {
-                transform: translateY(-15px) rotate(240deg);
-            }
-        }
-
-        @keyframes luxuryRotate {
-            from {
-                transform: rotate(0deg);
-            }
-
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        @keyframes luxuryPulse {
-
-            0%,
-            100% {
-                opacity: 1;
-            }
-
             50% {
-                opacity: .7;
+                transform: translateY(-20px);
             }
         }
 
-        @keyframes luxuryBounce {
-
-            0%,
-            20%,
-            53%,
-            80%,
-            100% {
-                transform: translate3d(0, 0, 0);
-            }
-
-            40%,
-            43% {
-                transform: translate3d(0, -30px, 0);
-            }
-
-            70% {
-                transform: translate3d(0, -15px, 0);
-            }
-
-            90% {
-                transform: translate3d(0, -4px, 0);
-            }
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        @keyframes textShimmer {
-            0% {
-                background-position: -200% center;
-            }
-
-            100% {
-                background-position: 200% center;
-            }
+        .animate-on-scroll.animate {
+            opacity: 1;
+            transform: translateY(0);
         }
 
-        @keyframes gradientX {
-
-            0%,
-            100% {
-                transform: translateX(0%);
-            }
-
-            50% {
-                transform: translateX(100%);
-            }
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(8, 47, 73, 0.95) 0%, rgba(12, 74, 110, 0.9) 50%, rgba(7, 89, 133, 0.85) 100%),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23082f49;stop-opacity:1" /><stop offset="100%" style="stop-color:%230c4a6e;stop-opacity:1" /></linearGradient></defs><rect fill="url(%23grad1)" width="1200" height="800"/><g fill="%23f59e0b" opacity="0.1"><circle cx="200" cy="200" r="100"/><circle cx="800" cy="300" r="80"/><circle cx="1000" cy="600" r="120"/><circle cx="400" cy="500" r="60"/></g></svg>');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
 
-        @keyframes gradientY {
-
-            0%,
-            100% {
-                transform: translateY(0%);
-            }
-
-            50% {
-                transform: translateY(100%);
-            }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
-        @keyframes gradientXY {
-
-            0%,
-            100% {
-                transform: translate(0%, 0%);
-            }
-
-            25% {
-                transform: translate(100%, 0%);
-            }
-
-            50% {
-                transform: translate(100%, 100%);
-            }
-
-            75% {
-                transform: translate(0%, 100%);
-            }
+        .glass-dark {
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background: #0A0A0A;
+        .hover-lift {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        .luxury-text-gradient {
-            background: linear-gradient(135deg, #D4AF37, #F7E98E, #D4AF37);
-            background-size: 200% 200%;
+        .hover-lift:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #f59e0b, #fbbf24);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            animation: textShimmer 3s ease-in-out infinite;
         }
 
-        .luxury-bg-pattern {
-            background-image:
-                radial-gradient(circle at 25% 25%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 75% 75%, rgba(192, 192, 192, 0.1) 0%, transparent 50%),
-                linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, transparent 100%);
-        }
-
-        .luxury-glass {
-            background: rgba(26, 26, 26, 0.8);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(212, 175, 55, 0.2);
-        }
-
-        .luxury-card {
-            background: linear-gradient(135deg, rgba(26, 26, 26, 0.9), rgba(10, 10, 10, 0.9));
-            border: 2px solid transparent;
-            background-clip: padding-box;
-            position: relative;
-            transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        }
-
-        .luxury-card::before {
-            content: '';
-            position: absolute;
+        .lightbox {
+            position: fixed;
             top: 0;
             left: 0;
-            right: 0;
-            bottom: 0;
-            border-radius: inherit;
-            padding: 2px;
-            background: linear-gradient(135deg, #D4AF37, #F7E98E, #C0C0C0, #D4AF37);
-            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-            mask-composite: exclude;
-            z-index: -1;
-        }
-
-        .luxury-card:hover {
-            transform: translateY(-20px) scale(1.02);
-            box-shadow: 0 40px 80px rgba(212, 175, 55, 0.3);
-        }
-
-        .luxury-hero {
-            background: linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 25%, rgba(212, 175, 55, 0.1) 50%, #1A1A1A 75%, #0A0A0A 100%);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .luxury-hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="luxury-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="2" fill="%23D4AF37" opacity="0.1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23luxury-pattern)"/></svg>');
-            opacity: 0.3;
-        }
-
-        .luxury-floating-elements {
-            position: absolute;
             width: 100%;
             height: 100%;
-            overflow: hidden;
-            pointer-events: none;
+            background: rgba(0, 0, 0, 0.95);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
         }
 
-        .luxury-floating-element {
-            position: absolute;
-            opacity: 0.1;
-            animation: luxuryFloat 8s ease-in-out infinite;
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            border-radius: 12px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
         }
 
-        .luxury-floating-element:nth-child(1) {
-            top: 10%;
-            left: 10%;
-            animation-delay: 0s;
+        .smooth-scroll {
+            scroll-behavior: smooth;
         }
 
-        .luxury-floating-element:nth-child(2) {
-            top: 20%;
-            right: 20%;
-            animation-delay: 2s;
+        .parallax {
+            transform: translateZ(0);
+            will-change: transform;
         }
 
-        .luxury-floating-element:nth-child(3) {
-            bottom: 30%;
-            left: 30%;
-            animation-delay: 4s;
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
         }
 
-        .luxury-floating-element:nth-child(4) {
-            bottom: 10%;
-            right: 10%;
-            animation-delay: 6s;
+        ::-webkit-scrollbar-track {
+            background: #082f49;
         }
 
-        .luxury-nav {
-            transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        ::-webkit-scrollbar-thumb {
+            background: #f59e0b;
+            border-radius: 4px;
         }
 
-        .luxury-nav.scrolled {
-            background: rgba(10, 10, 10, 0.95);
-            backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d97706;
         }
 
-        .luxury-btn {
-            background: linear-gradient(135deg, #D4AF37, #F7E98E);
-            color: #0A0A0A;
-            font-weight: 700;
-            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        /* Loading animation */
+        .loading-spinner {
+            border: 3px solid rgba(245, 158, 11, 0.3);
+            border-radius: 50%;
+            border-top: 3px solid #f59e0b;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Enhanced button styles */
+        .btn-primary {
+            background: linear-gradient(135deg, #f59e0b, #fbbf24);
+            transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
         }
 
-        .luxury-btn::before {
+        .btn-primary::before {
             content: '';
             position: absolute;
             top: 0;
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
             transition: left 0.5s;
         }
 
-        .luxury-btn:hover::before {
+        .btn-primary:hover::before {
             left: 100%;
         }
 
-        .luxury-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.4);
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(245, 158, 11, 0.4);
         }
 
-        .luxury-btn-outline {
-            background: transparent;
-            color: #D4AF37;
-            border: 2px solid #D4AF37;
-            font-weight: 700;
-            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        }
-
-        .luxury-btn-outline:hover {
-            background: #D4AF37;
-            color: #0A0A0A;
-            transform: translateY(-3px);
-            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.4);
-        }
-
-        .luxury-property-card {
-            background: linear-gradient(135deg, rgba(26, 26, 26, 0.95), rgba(10, 10, 10, 0.95));
-            border: 1px solid rgba(212, 175, 55, 0.2);
-            transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .luxury-property-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), transparent);
-            opacity: 0;
-            transition: opacity 0.5s;
-        }
-
-        .luxury-property-card:hover::before {
-            opacity: 1;
-        }
-
-        .luxury-property-card:hover {
-            transform: translateY(-15px);
-            border-color: rgba(212, 175, 55, 0.6);
-            box-shadow: 0 30px 60px rgba(212, 175, 55, 0.2);
-        }
-
-        .luxury-amenity-icon {
-            background: linear-gradient(135deg, #D4AF37, #F7E98E);
-            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        }
-
-        .luxury-amenity-icon:hover {
-            transform: scale(1.2) rotate(10deg);
-            box-shadow: 0 15px 30px rgba(212, 175, 55, 0.5);
-        }
-
-        .luxury-stats {
-            font-size: 4rem;
-            font-weight: 900;
-            background: linear-gradient(135deg, #D4AF37, #F7E98E, #C0C0C0);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
-        }
-
-        .luxury-gallery-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 20px;
-            transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        }
-
-        .luxury-gallery-item:hover {
-            transform: scale(1.05) rotate(2deg);
-        }
-
-        .luxury-gallery-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(212, 175, 55, 0.9), rgba(192, 192, 192, 0.9));
-            opacity: 0;
-            transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .luxury-gallery-item:hover .luxury-gallery-overlay {
-            opacity: 1;
-        }
-
-        .luxury-form {
-            background: linear-gradient(135deg, rgba(26, 26, 26, 0.9), rgba(10, 10, 10, 0.9));
+        /* Enhanced card styles */
+        .card-enhanced {
+            background: linear-gradient(145deg, rgba(7, 89, 133, 0.8), rgba(12, 74, 110, 0.9));
             backdrop-filter: blur(20px);
-            border: 1px solid rgba(212, 175, 55, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        .luxury-input {
-            background: rgba(26, 26, 26, 0.8);
-            border: 2px solid rgba(212, 175, 55, 0.3);
-            color: #FAFAFA;
-            transition: all 0.3s ease;
+        .card-enhanced:hover {
+            background: linear-gradient(145deg, rgba(7, 89, 133, 0.9), rgba(12, 74, 110, 1));
+            border-color: rgba(245, 158, 11, 0.3);
         }
 
-        .luxury-input:focus {
-            border-color: #D4AF37;
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
-            outline: none;
+        /* Floating elements */
+        .floating-element {
+            animation: float 6s ease-in-out infinite;
         }
 
-        .luxury-input::placeholder {
-            color: rgba(250, 250, 250, 0.6);
+        .floating-element:nth-child(2n) {
+            animation-delay: -2s;
         }
 
-        .animate-on-scroll {
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        }
-
-        .animate-on-scroll.animated {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .luxury-section-1 {
-            background: linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%);
-        }
-
-        .luxury-section-2 {
-            background: linear-gradient(135deg, #1A1A1A 0%, #0A0A0A 50%, #1A1A1A 100%);
-        }
-
-        .luxury-section-3 {
-            background: linear-gradient(135deg, #0A0A0A 0%, rgba(212, 175, 55, 0.05) 50%, #0A0A0A 100%);
-        }
-
-        .luxury-progress-bar {
-            height: 6px;
-            background: linear-gradient(90deg, #D4AF37, #F7E98E, #C0C0C0);
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 9999;
-            transition: width 0.3s ease;
-            box-shadow: 0 0 10px rgba(212, 175, 55, 0.8);
-        }
-
-        .luxury-timeline {
-            position: relative;
-            padding-left: 3rem;
-        }
-
-        .luxury-timeline::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 6px;
-            height: 100%;
-            background: linear-gradient(to bottom, #D4AF37, #F7E98E, #C0C0C0);
-            border-radius: 3px;
-            box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
-        }
-
-        .luxury-timeline-item::after {
-            content: '';
-            position: absolute;
-            left: -9px;
-            top: 1.5rem;
-            width: 20px;
-            height: 20px;
-            background: #D4AF37;
-            border-radius: 50%;
-            box-shadow: 0 0 0 6px rgba(212, 175, 55, 0.2), 0 0 20px rgba(212, 175, 55, 0.8);
-        }
-
-        .luxury-testimonial {
-            background: linear-gradient(135deg, rgba(26, 26, 26, 0.9), rgba(10, 10, 10, 0.9));
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        }
-
-        .luxury-testimonial:hover {
-            transform: translateY(-10px);
-            border-color: rgba(212, 175, 55, 0.8);
-            box-shadow: 0 25px 50px rgba(212, 175, 55, 0.2);
-        }
-
-        /* Mobile Menu Styles */
-        #luxuryMobileMenu {
-            transform: translateX(-100%);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        #luxuryMobileMenu.show {
-            transform: translateX(0);
-        }
-
-        #luxuryMobileMenuButton.menu-open {
-            background: rgba(212, 175, 55, 0.6) !important;
-            border-color: #F7E98E !important;
-        }
-
-        #luxuryMobileMenuButton.menu-open i {
-            color: #0A0A0A !important;
-        }
-
-        /* Mobile First Responsive Design */
-        @media (max-width: 640px) {
-            .luxury-hero {
-                min-height: 100vh;
-                padding: 80px 0 40px;
-            }
-
-            .luxury-floating-elements {
-                display: none;
-            }
-
-            h1 {
-                font-size: 2.5rem !important;
-                line-height: 1.1;
-                margin-bottom: 1rem;
-            }
-
-            .text-6xl,
-            .text-7xl,
-            .text-8xl,
-            .text-9xl {
-                font-size: 2.5rem !important;
-            }
-
-            .text-5xl {
-                font-size: 2rem !important;
-            }
-
-            .text-4xl {
-                font-size: 1.75rem !important;
-            }
-
-            .text-3xl {
-                font-size: 1.5rem !important;
-            }
-
-            .text-2xl {
-                font-size: 1.25rem !important;
-            }
-
-            .text-xl {
-                font-size: 1.125rem !important;
-            }
-
-            .luxury-stats {
-                font-size: 2.5rem !important;
-            }
-
-            .max-w-8xl {
-                max-width: 100%;
-                padding-left: 1rem;
-                padding-right: 1rem;
-            }
-
-            .px-6 {
-                padding-left: 1rem;
-                padding-right: 1rem;
-            }
-
-            .py-32 {
-                padding-top: 4rem;
-                padding-bottom: 4rem;
-            }
-
-            .py-24 {
-                padding-top: 3rem;
-                padding-bottom: 3rem;
-            }
-
-            .py-20 {
-                padding-top: 2.5rem;
-                padding-bottom: 2.5rem;
-            }
-
-            .mb-20 {
-                margin-bottom: 2rem;
-            }
-
-            .mb-16 {
-                margin-bottom: 1.5rem;
-            }
-
-            .mb-12 {
-                margin-bottom: 1rem;
-            }
-
-            .mb-8 {
-                margin-bottom: 0.75rem;
-            }
-
-            .gap-20 {
-                gap: 1.5rem;
-            }
-
-            .gap-16 {
-                gap: 1.25rem;
-            }
-
-            .gap-12 {
-                gap: 1rem;
-            }
-
-            .gap-8 {
-                gap: 0.75rem;
-            }
-
-            .luxury-property-card {
-                padding: 1.5rem;
-            }
-
-            .luxury-form {
-                padding: 1.5rem;
-            }
-
-            .luxury-testimonial {
-                padding: 1.5rem;
-            }
-
-            .grid-cols-2 {
-                grid-template-columns: repeat(1, minmax(0, 1fr));
-            }
-
-            .grid-cols-3 {
-                grid-template-columns: repeat(1, minmax(0, 1fr));
-            }
-
-            .grid-cols-4 {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-
-            .grid-cols-5 {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-
-            .xl\:col-span-2,
-            .xl\:col-span-3,
-            .lg\:col-span-2 {
-                grid-column: span 1 / span 1;
-            }
-
-            .flex-col {
-                flex-direction: column;
-            }
-
-            .lg\:flex-row {
-                flex-direction: column;
-            }
-
-            .luxury-nav .flex {
-                flex-wrap: wrap;
-            }
-
-            .luxury-nav h-24 {
-                height: auto;
-                min-height: 4rem;
-                padding: 0.5rem 0;
-            }
-
-            .w-24,
-            .h-24 {
-                width: 4rem;
-                height: 4rem;
-            }
-
-            .w-20,
-            .h-20 {
-                width: 3rem;
-                height: 3rem;
-            }
-
-            .w-16,
-            .h-16 {
-                width: 2.5rem;
-                height: 2.5rem;
-            }
-
-            .text-4xl.font-luxury {
-                font-size: 1.5rem !important;
-            }
-
-            .text-sm {
-                font-size: 0.75rem;
-            }
-
-            .luxury-timeline {
-                padding-left: 2rem;
-            }
-
-            .luxury-timeline::before {
-                width: 4px;
-            }
-
-            .luxury-timeline-item::after {
-                width: 16px;
-                height: 16px;
-                left: -8px;
-            }
-
-            .luxury-gallery-item {
-                margin-bottom: 1rem;
-            }
-
-            .h-80 {
-                height: 12rem;
-            }
-
-            .h-96 {
-                height: 16rem;
-            }
-
-            .luxury-card:hover,
-            .luxury-property-card:hover,
-            .luxury-testimonial:hover {
-                transform: translateY(-5px);
-            }
-
-            .animate-luxury-float,
-            .animate-luxury-bounce,
-            .animate-luxury-rotate {
-                animation: none;
-            }
-
-            /* Mobile menu button improvements */
-            #luxuryMobileMenuButton {
-                background: rgba(212, 175, 55, 0.2);
-                border: 2px solid #D4AF37;
-                border-radius: 8px;
-                padding: 8px;
-                transition: all 0.3s ease;
-            }
-
-            #luxuryMobileMenuButton:hover {
-                background: rgba(212, 175, 55, 0.4);
-                border-color: #F7E98E;
-                transform: scale(1.05);
-            }
-
-            #luxuryMobileMenuButton i {
-                color: #D4AF37 !important;
-                font-size: 1.5rem;
-            }
-
-            /* Mobile menu improvements */
-            #luxuryMobileMenu {
-                background: rgba(10, 10, 10, 0.98) !important;
-                backdrop-filter: blur(25px);
-                border: 1px solid rgba(212, 175, 55, 0.3);
-                border-top: 3px solid #D4AF37;
-            }
-
-            #luxuryMobileMenu a {
-                color: #FAFAFA !important;
-                font-weight: 600;
-                padding: 1rem 1.5rem;
-                border-bottom: 1px solid rgba(212, 175, 55, 0.1);
-                transition: all 0.3s ease;
-            }
-
-            #luxuryMobileMenu a:hover {
-                background: rgba(212, 175, 55, 0.1);
-                color: #D4AF37 !important;
-                padding-left: 2rem;
-            }
-
-            .luxury-btn,
-            .luxury-btn-outline {
-                padding: 1rem 1.5rem;
-                font-size: 1rem;
-                min-height: 48px;
-            }
-
-            .luxury-amenity-icon {
-                width: 4rem;
-                height: 4rem;
-            }
-
-            .luxury-amenity-icon i {
-                font-size: 1.5rem;
-            }
-
-            .luxury-nav .space-x-12 {
-                flex-direction: column;
-                space-x: 0;
-                gap: 0.5rem;
-            }
-
-            .luxury-input {
-                font-size: 16px;
-                padding: 1rem;
-            }
-
-            .luxury-gallery-item .h-80 {
-                height: 10rem;
-            }
-
-            .luxury-stats {
-                font-size: 2rem !important;
-                margin-bottom: 0.5rem;
-            }
-
-            .luxury-testimonial .flex {
-                flex-direction: column;
-                text-align: center;
-                gap: 1rem;
-            }
-
-            .luxury-testimonial .w-16 {
-                margin: 0 auto;
-            }
-
-            footer .grid-cols-1 {
-                gap: 2rem;
-            }
-
-            footer .lg\:col-span-2 {
-                grid-column: span 1;
-            }
-
-            .luxury-hero .flex {
-                flex-direction: column;
-                gap: 1rem;
-                padding: 1rem;
-            }
-
-            .luxury-hero .max-w-5xl {
-                max-width: 100%;
-            }
-
-            .xl\:grid-cols-2 {
-                grid-template-columns: repeat(1, minmax(0, 1fr));
-                gap: 2rem;
-            }
-
-            .luxury-property-card.xl\:col-span-2,
-            .luxury-property-card.xl\:col-span-3 {
-                grid-column: span 1;
-            }
-
-            .luxury-timeline {
-                padding-left: 1.5rem;
-            }
-
-            .luxury-hero .absolute.bottom-12 {
-                bottom: 2rem;
-            }
-
-            .fixed.bottom-8.right-8 {
-                bottom: 1rem;
-                right: 1rem;
-                width: 3.5rem;
-                height: 3.5rem;
-            }
-
-            .fixed.bottom-8.right-8 i {
-                font-size: 1.5rem;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .md\:grid-cols-2 {
-                grid-template-columns: repeat(1, minmax(0, 1fr));
-            }
-
-            .md\:grid-cols-3 {
-                grid-template-columns: repeat(1, minmax(0, 1fr));
-            }
-
-            .md\:col-span-2 {
-                grid-column: span 1 / span 1;
-            }
-
-            .md\:text-4xl,
-            .md\:text-5xl,
-            .md\:text-7xl,
-            .md\:text-8xl {
-                font-size: inherit !important;
-            }
-
-            .md\:flex-row {
-                flex-direction: column;
-            }
-        }
-
-        @media (max-width: 1024px) {
-            .lg\:grid-cols-2 {
-                grid-template-columns: repeat(1, minmax(0, 1fr));
-            }
-
-            .lg\:grid-cols-3 {
-                grid-template-columns: repeat(1, minmax(0, 1fr));
-            }
-
-            .lg\:grid-cols-4 {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-
-            .lg\:grid-cols-5 {
-                grid-template-columns: repeat(3, minmax(0, 1fr));
-            }
-
-            .xl\:grid-cols-2 {
-                grid-template-columns: repeat(1, minmax(0, 1fr));
-            }
-
-            .xl\:grid-cols-3 {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-            }
-        }
-
-        @media (max-width: 640px) and (orientation: landscape) {
-            .luxury-hero {
-                min-height: 100vh;
-                padding: 60px 0 20px;
-            }
-
-            .luxury-hero h1 {
-                font-size: 2rem !important;
-            }
-
-            .luxury-hero .text-2xl {
-                font-size: 1rem !important;
-            }
-
-            .py-32 {
-                padding-top: 2rem;
-                padding-bottom: 2rem;
-            }
+        .floating-element:nth-child(3n) {
+            animation-delay: -4s;
         }
     </style>
 </head>
 
-<body class="bg-luxury-black text-luxury-white overflow-x-hidden">
-    <!-- Luxury Progress Bar -->
-    <div class="luxury-progress-bar" id="luxuryProgressBar"></div>
+<body class="font-inter bg-primary-950 text-white smooth-scroll overflow-x-hidden">
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="fixed inset-0 bg-primary-950 flex items-center justify-center z-50">
+        <div class="text-center">
+            <div class="loading-spinner mx-auto mb-4"></div>
+            <h2 class="text-2xl font-bold gradient-text">KNP Developer</h2>
+            <p class="text-gray-400">Loading your dream home...</p>
+        </div>
+    </div>
 
-    <!-- Premium Navigation -->
-    <nav class="luxury-nav fixed w-full top-0 z-50" id="luxuryNavbar">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6">
-            <div class="flex justify-between items-center h-14 sm:h-16 lg:h-20">
-                <!-- Logo + Tagline -->
-                <div class="flex-shrink-0 animate-luxury-slide-left">
-                    <div
-                        class="text-lg sm:text-xl lg:text-3xl font-luxury font-bold luxury-text-gradient leading-tight">
-                        KNP DEVELOPERS
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-40 transition-all duration-500" id="navbar">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-accent-400 to-accent-600 rounded-full flex items-center justify-center">
+                        <i class="fas fa-building text-primary-950 text-xl"></i>
                     </div>
-                    <div class="text-[10px] sm:text-xs text-luxury-gold font-medium tracking-wider hidden sm:block">
-                        BUILDING EXTRAORDINARY FUTURES
-                    </div>
-                </div>
-
-                <!-- Desktop Nav Links -->
-                <div class="hidden lg:block animate-luxury-fade">
-                    <div class="ml-8 flex items-center space-x-4 xl:space-x-6">
-                        <a href="#home"
-                            class="text-luxury-white hover:text-luxury-gold text-sm font-medium px-2 py-1 transition-all duration-300 hover:scale-105">HOME</a>
-                        <a href="#about"
-                            class="text-luxury-white hover:text-luxury-gold text-sm font-medium px-2 py-1 transition-all duration-300 hover:scale-105">ABOUT</a>
-                        <a href="#properties"
-                            class="text-luxury-white hover:text-luxury-gold text-sm font-medium px-2 py-1 transition-all duration-300 hover:scale-105">PROPERTIES</a>
-                        <a href="#amenities"
-                            class="text-luxury-white hover:text-luxury-gold text-sm font-medium px-2 py-1 transition-all duration-300 hover:scale-105">AMENITIES</a>
-                        <a href="#gallery"
-                            class="text-luxury-white hover:text-luxury-gold text-sm font-medium px-2 py-1 transition-all duration-300 hover:scale-105">GALLERY</a>
-                        <a href="#contact"
-                            class="text-luxury-white hover:text-luxury-gold text-sm font-medium px-2 py-1 transition-all duration-300 hover:scale-105">CONTACT</a>
+                    <div>
+                        <span class="text-2xl font-bold gradient-text">KNP Developer</span>
+                        <div class="text-xs text-gray-400">Premium Living</div>
                     </div>
                 </div>
 
-                <!-- Desktop CTA -->
-                <div class="hidden lg:block animate-luxury-slide-right">
-                    <a href="#contact" class="luxury-btn px-4 py-2 rounded-full text-xs font-bold tracking-wide">
-                        EXCLUSIVE BOOKING
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex space-x-8">
+                    <a href="#home" class="nav-link relative py-2 px-1 hover:text-accent-400 transition-colors duration-300">Home</a>
+                    <a href="#about" class="nav-link relative py-2 px-1 hover:text-accent-400 transition-colors duration-300">About</a>
+                    <a href="#properties" class="nav-link relative py-2 px-1 hover:text-accent-400 transition-colors duration-300">Properties</a>
+                    <a href="#amenities" class="nav-link relative py-2 px-1 hover:text-accent-400 transition-colors duration-300">Amenities</a>
+                    <a href="#testimonials" class="nav-link relative py-2 px-1 hover:text-accent-400 transition-colors duration-300">Reviews</a>
+                    <a href="#gallery" class="nav-link relative py-2 px-1 hover:text-accent-400 transition-colors duration-300">Gallery</a>
+                    <a href="#contact" class="nav-link relative py-2 px-1 hover:text-accent-400 transition-colors duration-300">Contact</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="#contact" class="btn-primary text-primary-950 px-6 py-2 rounded-full font-semibold">
+                        Book Site Visit
                     </a>
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <div class="lg:hidden">
-                    <button id="luxuryMobileMenuButton"
-                        class="text-luxury-gold hover:text-luxury-gold-light transition duration-300 p-2">
-                        <i class="fas fa-bars text-xl"></i>
-                    </button>
-                </div>
+                <button class="lg:hidden text-white p-2" id="mobile-menu-btn">
+                    <div class="w-6 h-6 relative">
+                        <span class="hamburger-line absolute h-0.5 w-6 bg-current transform transition duration-300"></span>
+                        <span class="hamburger-line absolute h-0.5 w-6 bg-current transform transition duration-300 translate-y-2"></span>
+                        <span class="hamburger-line absolute h-0.5 w-6 bg-current transform transition duration-300 translate-y-4"></span>
+                    </div>
+                </button>
             </div>
-        </div>
 
-        <!-- Mobile Menu -->
-        <div id="luxuryMobileMenu" class="lg:hidden hidden fixed top-0 left-0 w-full h-full z-40 bg-luxury-black pt-20">
-
-            <div class="px-6 pt-8 pb-6 space-y-2 h-full overflow-y-auto">
-                <a href="#"
-                    class="block px-4 py-3 text-luxury-white hover:text-luxury-gold text-lg font-semibold border-b border-luxury-gold/20">
-                    <i class="fas fa-times mr-2"></i>Close
-                </a>
-
-                <a href="#home"
-                    class="block px-4 py-3 text-luxury-white hover:text-luxury-gold text-lg font-semibold border-b border-luxury-gold/20">
-                    <i class="fas fa-home mr-2"></i>HOME
-                </a>
-                <a href="#about"
-                    class="block px-4 py-3 text-luxury-white hover:text-luxury-gold text-lg font-semibold border-b border-luxury-gold/20">
-                    <i class="fas fa-info-circle mr-2"></i>ABOUT
-                </a>
-                <a href="#properties"
-                    class="block px-4 py-3 text-luxury-white hover:text-luxury-gold text-lg font-semibold border-b border-luxury-gold/20">
-                    <i class="fas fa-building mr-2"></i>PROPERTIES
-                </a>
-                <a href="#amenities"
-                    class="block px-4 py-3 text-luxury-white hover:text-luxury-gold text-lg font-semibold border-b border-luxury-gold/20">
-                    <i class="fas fa-star mr-2"></i>AMENITIES
-                </a>
-                <a href="#gallery"
-                    class="block px-4 py-3 text-luxury-white hover:text-luxury-gold text-lg font-semibold border-b border-luxury-gold/20">
-                    <i class="fas fa-images mr-2"></i>GALLERY
-                </a>
-                <a href="#contact"
-                    class="block px-4 py-3 text-luxury-white hover:text-luxury-gold text-lg font-semibold border-b border-luxury-gold/20">
-                    <i class="fas fa-phone mr-2"></i>CONTACT
-                </a>
-                <div class="pt-6 px-4">
-                    <a href="#contact" class="luxury-btn block text-center py-3 rounded-full font-bold text-base">
-                        <i class="fas fa-crown mr-2"></i>EXCLUSIVE BOOKING
+            <!-- Mobile Menu -->
+            <div class="lg:hidden hidden glass-dark rounded-lg mt-2 p-4" id="mobile-menu">
+                <div class="space-y-4">
+                    <a href="#home" class="block py-2 hover:text-accent-400 transition-colors">Home</a>
+                    <a href="#about" class="block py-2 hover:text-accent-400 transition-colors">About</a>
+                    <a href="#properties" class="block py-2 hover:text-accent-400 transition-colors">Properties</a>
+                    <a href="#amenities" class="block py-2 hover:text-accent-400 transition-colors">Amenities</a>
+                    <a href="#testimonials" class="block py-2 hover:text-accent-400 transition-colors">Reviews</a>
+                    <a href="#gallery" class="block py-2 hover:text-accent-400 transition-colors">Gallery</a>
+                    <a href="#contact" class="block py-2 hover:text-accent-400 transition-colors">Contact</a>
+                    <a href="#contact" class="btn-primary text-primary-950 px-6 py-3 rounded-full font-semibold inline-block mt-4">
+                        Book Site Visit
                     </a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Luxury Hero Section -->
-    <section id="home" class="luxury-hero min-h-screen flex items-center justify-center relative">
-        <!-- Luxury Floating Elements -->
-        <div class="luxury-floating-elements">
-            <div class="luxury-floating-element w-40 h-40 bg-luxury-gold rounded-full opacity-10"></div>
-            <div class="luxury-floating-element w-32 h-32 bg-luxury-silver rounded-lg transform rotate-45 opacity-10">
-            </div>
-            <div class="luxury-floating-element w-48 h-48 border-4 border-luxury-gold rounded-full opacity-10"></div>
-            <div class="luxury-floating-element w-24 h-24 bg-luxury-bronze rounded-full opacity-10"></div>
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen hero-bg flex items-center py-20 relative overflow-hidden">
+        <!-- Floating Elements -->
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="floating-element absolute top-20 left-10 w-20 h-20 bg-accent-400 opacity-10 rounded-full"></div>
+            <div class="floating-element absolute top-40 right-20 w-32 h-32 bg-accent-500 opacity-10 rounded-full"></div>
+            <div class="floating-element absolute bottom-40 left-20 w-16 h-16 bg-accent-600 opacity-10 rounded-full"></div>
         </div>
 
-        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-12 text-center relative z-10">
-            <div class="animate-luxury-slide-up">
-                <h1
-                    class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-luxury font-black mb-4 sm:mb-6 lg:mb-8 luxury-text-gradient animate-luxury-glow">
-                    PARSHURAM BHUBAN
+        <div class="max-w-7xl w-full mx-auto px-6 relative z-10">
+            <div class="text-center animate-on-scroll">
+                <div class="mb-6">
+                    <span class="inline-block bg-accent-500/20 text-accent-400 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                        🏆 Berhampur's First 13-Floor Premium Township
+                    </span>
+                </div>
+                
+                <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold mb-8 leading-tight">
+                    Luxury Living<br>
+                    <span class="gradient-text">Redefined</span>
                 </h1>
-                <p
-                    class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl mb-3 sm:mb-4 lg:mb-6 text-luxury-gold font-elegant font-medium">
-                    India's Most Prestigious Township
+                
+                <p class="text-lg sm:text-xl md:text-2xl mb-12 max-w-4xl mx-auto opacity-90 leading-relaxed">
+                    Experience unparalleled luxury in Berhampur's most prestigious address. Premium 2.5 BHK, 3 BHK apartments and exclusive duplex houses with world-class amenities.
                 </p>
-                <p
-                    class="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 lg:mb-12 text-luxury-silver max-w-5xl mx-auto leading-relaxed px-4">
-                    Experience unparalleled luxury in Berhampur's first ultra-premium township featuring
-                    13-floor architectural marvels, exclusive duplex estates, and world-class amenities
-                    that redefine sophisticated living.
-                </p>
-                <div class="flex flex-col sm:flex-row lg:flex-row gap-4 sm:gap-6 justify-center items-center px-4">
-                    <a href="#properties"
-                        class="luxury-btn w-full sm:w-auto px-6 sm:px-8 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg lg:text-xl font-bold tracking-wide inline-block">
-                        <i class="fas fa-crown mr-2 sm:mr-3"></i>
-                        <span class="hidden sm:inline">EXPLORE LUXURY PROPERTIES</span>
-                        <span class="sm:hidden">EXPLORE PROPERTIES</span>
+
+                <div class="flex flex-col sm:flex-row gap-6 justify-center mb-16">
+                    <a href="#properties" class="btn-primary text-primary-950 px-8 py-4 rounded-full font-semibold text-lg inline-flex items-center gap-2">
+                        <i class="fas fa-home"></i>
+                        Explore Properties
                     </a>
-                    <a href="#contact"
-                        class="luxury-btn-outline w-full sm:w-auto px-6 sm:px-8 lg:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg lg:text-xl font-bold tracking-wide inline-block">
-                        <i class="fas fa-calendar-alt mr-2 sm:mr-3"></i>
-                        <span class="hidden sm:inline">SCHEDULE PRIVATE TOUR</span>
-                        <span class="sm:hidden">SCHEDULE TOUR</span>
+                    <a href="#contact" class="glass-effect hover:bg-white/20 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all inline-flex items-center gap-2">
+                        <i class="fas fa-calendar-alt"></i>
+                        Schedule Visit
                     </a>
+                </div>
+
+                <!-- Enhanced Stats -->
+                <div class="grid grid-cols-2 gap-6 sm:grid-cols-4 max-w-4xl mx-auto">
+                    <div class="glass-effect rounded-2xl p-6 hover-lift">
+                        <div class="text-3xl sm:text-4xl font-bold gradient-text mb-2">13</div>
+                        <div class="text-sm opacity-80">Premium Floors</div>
+                    </div>
+                    <div class="glass-effect rounded-2xl p-6 hover-lift">
+                        <div class="text-3xl sm:text-4xl font-bold gradient-text mb-2">200+</div>
+                        <div class="text-sm opacity-80">Luxury Units</div>
+                    </div>
+                    <div class="glass-effect rounded-2xl p-6 hover-lift">
+                        <div class="text-3xl sm:text-4xl font-bold gradient-text mb-2">20+</div>
+                        <div class="text-sm opacity-80">World-Class Amenities</div>
+                    </div>
+                    <div class="glass-effect rounded-2xl p-6 hover-lift">
+                        <div class="text-3xl sm:text-4xl font-bold gradient-text mb-2">5</div>
+                        <div class="text-sm opacity-80">Acres of Luxury</div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Luxury Scroll Indicator -->
-        <div class="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-luxury-bounce">
-            <div class="w-8 h-16 border-3 border-luxury-gold rounded-full flex justify-center">
-                <div class="w-2 h-6 bg-luxury-gold rounded-full mt-3 animate-luxury-pulse"></div>
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-slow">
+            <div class="w-6 h-10 border-2 border-accent-400 rounded-full flex justify-center">
+                <div class="w-1 h-3 bg-accent-400 rounded-full mt-2 animate-pulse"></div>
             </div>
         </div>
     </section>
 
-    <!-- Luxury Stats Section -->
-    <section class="luxury-section-1 py-24 relative">
-        <div class="max-w-8xl mx-auto px-6 lg:px-12">
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-12 text-center">
-                <div class="animate-on-scroll">
-                    <div class="luxury-stats" data-count="13">0</div>
-                    <p class="text-luxury-gold font-semibold text-xl tracking-wide">FLOOR LUXURY TOWER</p>
-                </div>
-                <div class="animate-on-scroll">
-                    <div class="luxury-stats" data-count="500">0</div>
-                    <p class="text-luxury-gold font-semibold text-xl tracking-wide">PREMIUM RESIDENCES</p>
-                </div>
-                <div class="animate-on-scroll">
-                    <div class="luxury-stats" data-count="50">0</div>
-                    <p class="text-luxury-gold font-semibold text-xl tracking-wide">WORLD-CLASS AMENITIES</p>
-                </div>
-                <div class="animate-on-scroll">
-                    <div class="luxury-stats" data-count="1">0</div>
-                    <p class="text-luxury-gold font-semibold text-xl tracking-wide">TOWNSHIP IN BERHAMPUR</p>
-                </div>
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-primary-900 relative">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-20 animate-on-scroll">
+                <span class="inline-block bg-accent-500/20 text-accent-400 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    About KNP Township
+                </span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Where Dreams Meet <span class="gradient-text">Reality</span>
+                </h2>
+                <p class="text-xl opacity-80 max-w-3xl mx-auto leading-relaxed">
+                    Berhampur's most prestigious residential destination, setting new standards in luxury living with unmatched quality and modern amenities.
+                </p>
             </div>
-        </div>
-    </section>
 
-    <!-- Luxury About Section -->
-    <section id="about" class="luxury-section-2 py-32">
-        <div class="max-w-8xl mx-auto px-6 lg:px-12">
-            <div class="grid grid-cols-1 xl:grid-cols-2 gap-20 items-center">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div class="animate-on-scroll">
-                    <h2 class="text-5xl md:text-7xl font-luxury font-bold luxury-text-gradient mb-12">
-                        REDEFINING LUXURY LIVING
-                    </h2>
-                    <p class="text-xl text-luxury-silver mb-8 leading-relaxed">
-                        KNP Developers stands as the pinnacle of architectural excellence and luxury real estate
-                        development in Eastern India.
-                        With Parshuram Bhuban, we are not just building homes; we are crafting a legacy of unparalleled
-                        sophistication.
-                    </p>
-                    <p class="text-xl text-luxury-silver mb-12 leading-relaxed">
-                        Our vision transcends conventional development. We create exclusive communities where every
-                        detail reflects
-                        our commitment to excellence, innovation, and the finest quality of life.
-                    </p>
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-3xl font-bold mb-6 gradient-text">Excellence in Every Detail</h3>
+                            <p class="text-lg mb-6 opacity-90 leading-relaxed">
+                                KNP Developer proudly presents Berhampur's most ambitious residential project - a 13-floor premium township that redefines luxury living. Our commitment to excellence is reflected in every aspect of design, construction, and amenities.
+                            </p>
+                            <p class="text-lg mb-8 opacity-90 leading-relaxed">
+                                Located strategically in the heart of Berhampur, our township offers unparalleled connectivity while maintaining the tranquility of premium living. Each residence is meticulously crafted to provide maximum comfort, elegance, and modern convenience.
+                            </p>
+                        </div>
 
-                    <!-- Luxury Timeline -->
-                    <div class="luxury-timeline space-y-8">
-                        <div class="luxury-timeline-item relative">
-                            <h4 class="text-2xl font-bold text-luxury-gold mb-3">VISIONARY INCEPTION</h4>
-                            <p class="text-luxury-silver text-lg">Conceptualized India's most ambitious township project
-                                in Berhampur</p>
-                        </div>
-                        <div class="luxury-timeline-item relative">
-                            <h4 class="text-2xl font-bold text-luxury-gold mb-3">ARCHITECTURAL MASTERY</h4>
-                            <p class="text-luxury-silver text-lg">13-floor towers and luxury duplex estates under
-                                construction</p>
-                        </div>
-                        <div class="luxury-timeline-item relative">
-                            <h4 class="text-2xl font-bold text-luxury-gold mb-3">FUTURE EXPANSION</h4>
-                            <p class="text-luxury-silver text-lg">Setting new benchmarks for luxury developments across
-                                India</p>
+                        <!-- Features Grid -->
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="card-enhanced rounded-2xl p-6 text-center">
+                                <div class="w-16 h-16 bg-accent-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-certificate text-primary-950 text-2xl"></i>
+                                </div>
+                                <div class="text-xl font-bold gradient-text mb-2">RERA Approved</div>
+                                <div class="text-sm opacity-80">Fully Compliant</div>
+                            </div>
+                            <div class="card-enhanced rounded-2xl p-6 text-center">
+                                <div class="w-16 h-16 bg-accent-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <i class="fas fa-compass text-primary-950 text-2xl"></i>
+                                </div>
+                                <div class="text-xl font-bold gradient-text mb-2">Vastu</div>
+                                <div class="text-sm opacity-80">100% Compliant</div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="animate-on-scroll">
                     <div class="relative">
-                        <div
-                            class="w-full h-[600px] luxury-card rounded-3xl shadow-luxury-xl flex items-center justify-center">
-                            <i class="fas fa-building text-luxury-gold text-9xl animate-luxury-float"></i>
-                        </div>
-                        <div
-                            class="absolute -top-8 -right-8 w-32 h-32 bg-luxury-gold rounded-full animate-luxury-pulse opacity-20">
-                        </div>
-                        <div
-                            class="absolute -bottom-8 -left-8 w-40 h-40 border-4 border-luxury-silver rounded-full animate-luxury-bounce opacity-20">
-                        </div>
-                        <div
-                            class="absolute top-1/2 -left-12 w-24 h-24 bg-luxury-bronze rounded-lg transform rotate-45 animate-luxury-rotate opacity-20">
+                        <div class="card-enhanced rounded-3xl p-8">
+                            <h4 class="text-2xl font-bold mb-6 gradient-text flex items-center gap-3">
+                                <i class="fas fa-star"></i>
+                                Project Highlights
+                            </h4>
+                            <div class="space-y-4">
+                                <div class="flex items-center gap-4 p-4 glass-effect rounded-xl">
+                                    <div class="w-3 h-3 bg-accent-400 rounded-full flex-shrink-0"></div>
+                                    <span class="text-lg">13-floor premium township with modern architecture</span>
+                                </div>
+                                <div class="flex items-center gap-4 p-4 glass-effect rounded-xl">
+                                    <div class="w-3 h-3 bg-accent-400 rounded-full flex-shrink-0"></div>
+                                    <span class="text-lg">Spacious 2.5 BHK & 3 BHK premium apartments</span>
+                                </div>
+                                <div class="flex items-center gap-4 p-4 glass-effect rounded-xl">
+                                    <div class="w-3 h-3 bg-accent-400 rounded-full flex-shrink-0"></div>
+                                    <span class="text-lg">Exclusive luxury duplex houses with private terraces</span>
+                                </div>
+                                <div class="flex items-center gap-4 p-4 glass-effect rounded-xl">
+                                    <div class="w-3 h-3 bg-accent-400 rounded-full flex-shrink-0"></div>
+                                    <span class="text-lg">20+ world-class amenities & facilities</span>
+                                </div>
+                                <div class="flex items-center gap-4 p-4 glass-effect rounded-xl">
+                                    <div class="w-3 h-3 bg-accent-400 rounded-full flex-shrink-0"></div>
+                                    <span class="text-lg">Prime location with excellent connectivity</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1275,385 +512,363 @@
         </div>
     </section>
 
-    <!-- Luxury Properties Section -->
-    <section id="properties" class="luxury-section-3 py-32">
-        <div class="max-w-8xl mx-auto px-6 lg:px-12">
+    <!-- Properties Section -->
+    <section id="properties" class="py-24 bg-primary-950 relative">
+        <div class="container mx-auto px-4">
             <div class="text-center mb-20 animate-on-scroll">
-                <h2 class="text-5xl md:text-7xl font-luxury font-bold luxury-text-gradient mb-8">
-                    EXCLUSIVE RESIDENCES
+                <span class="inline-block bg-accent-500/20 text-accent-400 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    Our Premium Properties
+                </span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Choose Your <span class="gradient-text">Dream Home</span>
                 </h2>
-                <p class="text-2xl text-luxury-silver max-w-4xl mx-auto leading-relaxed">
-                    Discover our meticulously crafted collection of luxury homes, each designed to exceed
-                    the highest standards of contemporary living
+                <p class="text-xl opacity-80 max-w-3xl mx-auto leading-relaxed">
+                    Discover our range of meticulously designed homes, each crafted to provide the ultimate in luxury, comfort, and modern living.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-12">
-                <!-- 13 Floor Luxury Tower -->
-                <div class="luxury-property-card rounded-3xl p-10 animate-on-scroll xl:col-span-2">
-                    <div class="text-center mb-8">
-                        <div
-                            class="w-24 h-24 bg-gradient-to-br from-luxury-gold to-luxury-gold-light rounded-3xl flex items-center justify-center mx-auto mb-6 animate-luxury-glow">
-                            <i class="fas fa-building text-luxury-black text-4xl"></i>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 2.5 BHK -->
+                <div class="card-enhanced rounded-3xl overflow-hidden hover-lift animate-on-scroll group">
+                    <div class="h-80 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80" 
+                             alt="2.5 BHK Apartment" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-accent-500 text-primary-950 px-3 py-1 rounded-full text-sm font-semibold">
+                                Most Popular
+                            </span>
                         </div>
-                        <h3 class="text-3xl font-luxury font-bold text-luxury-white mb-3">13-FLOOR LUXURY TOWER</h3>
-                        <p class="text-luxury-gold text-xl">ARCHITECTURAL MASTERPIECE</p>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <ul class="space-y-4">
-                            <li class="flex items-center text-luxury-silver text-lg">
-                                <i class="fas fa-crown text-luxury-gold mr-4 text-xl"></i>
-                                Ultra-Modern Architecture
-                            </li>
-                            <li class="flex items-center text-luxury-silver text-lg">
-                                <i class="fas fa-crown text-luxury-gold mr-4 text-xl"></i>
-                                360° Panoramic City Views
-                            </li>
-                            <li class="flex items-center text-luxury-silver text-lg">
-                                <i class="fas fa-crown text-luxury-gold mr-4 text-xl"></i>
-                                High-Speed Smart Elevators
-                            </li>
-                        </ul>
-                        <ul class="space-y-4">
-                            <li class="flex items-center text-luxury-silver text-lg">
-                                <i class="fas fa-crown text-luxury-gold mr-4 text-xl"></i>
-                                24/7 Concierge Services
-                            </li>
-                            <li class="flex items-center text-luxury-silver text-lg">
-                                <i class="fas fa-crown text-luxury-gold mr-4 text-xl"></i>
-                                Sky Lounge & Terrace Garden
-                            </li>
-                            <li class="flex items-center text-luxury-silver text-lg">
-                                <i class="fas fa-crown text-luxury-gold mr-4 text-xl"></i>
-                                Premium Security Systems
-                            </li>
-                        </ul>
+
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-4 gradient-text">2.5 BHK Apartments</h3>
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            Perfect for growing families, these spacious apartments feature modern design, premium finishes, and optimal space utilization for comfortable living.
+                        </p>
+                        
+                        <div class="space-y-3 mb-8">
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-home text-accent-400 w-5"></i>
+                                <span>Built-up Area: 1,200-1,400 sq ft</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-bed text-accent-400 w-5"></i>
+                                <span>2 Master Bedrooms + Study Room</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-bath text-accent-400 w-5"></i>
+                                <span>2 Premium Bathrooms + Balcony</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-utensils text-accent-400 w-5"></i>
+                                <span>Modern Kitchen & Living Area</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="text-3xl font-bold gradient-text">₹45-55 Lakhs</div>
+                            <div class="text-sm text-gray-400">Starting Price</div>
+                        </div>
+                        
+                        <button class="w-full btn-primary text-primary-950 py-4 rounded-xl font-semibold text-lg property-btn" 
+                                data-property="2.5 BHK">
+                            <i class="fas fa-info-circle mr-2"></i>
+                            View Details
+                        </button>
                     </div>
-                    <button class="luxury-btn w-full py-4 rounded-2xl font-bold text-lg mt-8">
-                        EXPLORE TOWER RESIDENCES
-                    </button>
                 </div>
 
-                <!-- 2BHK Luxury Apartments -->
-                <div class="luxury-property-card rounded-3xl p-10 animate-on-scroll">
-                    <div class="text-center mb-8">
-                        <div
-                            class="w-24 h-24 bg-gradient-to-br from-royal-blue to-royal-purple rounded-3xl flex items-center justify-center mx-auto mb-6 animate-luxury-glow">
-                            <i class="fas fa-home text-luxury-white text-4xl"></i>
+                <!-- 3 BHK -->
+                <div class="card-enhanced rounded-3xl overflow-hidden hover-lift animate-on-scroll group">
+                    <div class="h-80 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1571055107559-3e67626fa8be?auto=format&fit=crop&w=800&q=80" 
+                             alt="3 BHK Apartment" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-primary-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                Premium Choice
+                            </span>
                         </div>
-                        <h3 class="text-3xl font-luxury font-bold text-luxury-white mb-3">2BHK LUXURY</h3>
-                        <p class="text-luxury-gold text-xl">SOPHISTICATED COMFORT</p>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     </div>
-                    <ul class="space-y-4 mb-8">
-                        <li class="flex items-center text-luxury-silver text-lg">
-                            <i class="fas fa-gem text-luxury-gold mr-4"></i>
-                            1200-1400 Sq.ft
-                        </li>
-                        <li class="flex items-center text-luxury-silver text-lg">
-                            <i class="fas fa-gem text-luxury-gold mr-4"></i>
-                            Premium Interiors
-                        </li>
-                        <li class="flex items-center text-luxury-silver text-lg">
-                            <i class="fas fa-gem text-luxury-gold mr-4"></i>
-                            Designer Kitchen
-                        </li>
-                        <li class="flex items-center text-luxury-silver text-lg">
-                            <i class="fas fa-gem text-luxury-gold mr-4"></i>
-                            Private Balcony
-                        </li>
-                    </ul>
-                    <button class="luxury-btn-outline w-full py-4 rounded-2xl font-bold text-lg">
-                        VIEW DETAILS
-                    </button>
+
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-4 gradient-text">3 BHK Apartments</h3>
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            Luxurious living spaces designed for larger families, featuring contemporary architecture, premium amenities, and spacious layouts.
+                        </p>
+                        
+                        <div class="space-y-3 mb-8">
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-home text-accent-400 w-5"></i>
+                                <span>Built-up Area: 1,500-1,800 sq ft</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-bed text-accent-400 w-5"></i>
+                                <span>3 Spacious Master Bedrooms</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-bath text-accent-400 w-5"></i>
+                                <span>3 Premium Bathrooms + 2 Balconies</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-utensils text-accent-400 w-5"></i>
+                                <span>Premium Kitchen & Dining Area</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="text-3xl font-bold gradient-text">₹60-75 Lakhs</div>
+                            <div class="text-sm text-gray-400">Starting Price</div>
+                        </div>
+                        
+                        <button class="w-full btn-primary text-primary-950 py-4 rounded-xl font-semibold text-lg property-btn" 
+                                data-property="3 BHK">
+                            <i class="fas fa-info-circle mr-2"></i>
+                            View Details
+                        </button>
+                    </div>
                 </div>
 
-                <!-- 2.5BHK Luxury Apartments -->
-                <div class="luxury-property-card rounded-3xl p-10 animate-on-scroll">
-                    <div class="text-center mb-8">
-                        <div
-                            class="w-24 h-24 bg-gradient-to-br from-emerald to-luxury-gold rounded-3xl flex items-center justify-center mx-auto mb-6 animate-luxury-glow">
-                            <i class="fas fa-door-open text-luxury-white text-4xl"></i>
+                <!-- Duplex -->
+                <div class="card-enhanced rounded-3xl overflow-hidden hover-lift animate-on-scroll group">
+                    <div class="h-80 bg-gradient-to-br from-accent-400 to-accent-600 flex items-center justify-center relative overflow-hidden">
+                        <div class="text-primary-950 text-5xl font-bold z-10">DUPLEX</div>
+                        <div class="absolute inset-0 bg-gradient-to-br from-accent-400/20 to-accent-600/40"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-primary-950 text-accent-400 px-3 py-1 rounded-full text-sm font-semibold">
+                                Ultra Luxury
+                            </span>
                         </div>
-                        <h3 class="text-3xl font-luxury font-bold text-luxury-white mb-3">2.5BHK LUXURY</h3>
-                        <p class="text-luxury-gold text-xl">ENHANCED ELEGANCE</p>
                     </div>
-                    <ul class="space-y-4 mb-8">
-                        <li class="flex items-center text-luxury-silver text-lg">
-                            <i class="fas fa-gem text-luxury-gold mr-4"></i>
-                            1500-1700 Sq.ft
-                        </li>
-                        <li class="flex items-center text-luxury-silver text-lg">
-                            <i class="fas fa-gem text-luxury-gold mr-4"></i>
-                            Study/Office Room
-                        </li>
-                        <li class="flex items-center text-luxury-silver text-lg">
-                            <i class="fas fa-gem text-luxury-gold mr-4"></i>
-                            Luxury Fittings
-                        </li>
-                        <li class="flex items-center text-luxury-silver text-lg">
-                            <i class="fas fa-gem text-luxury-gold mr-4"></i>
-                            Multiple Balconies
-                        </li>
-                    </ul>
-                    <button class="luxury-btn-outline w-full py-4 rounded-2xl font-bold text-lg">
-                        VIEW DETAILS
-                    </button>
-                </div>
 
-                <!-- 3BHK Luxury Apartments -->
-                <div class="luxury-property-card rounded-3xl p-10 animate-on-scroll">
-                    <div class="text-center mb-8">
-                        <div
-                            class="w-24 h-24 bg-gradient-to-br from-crimson to-luxury-bronze rounded-3xl flex items-center justify-center mx-auto mb-6 animate-luxury-glow">
-                            <i class="fas fa-house-user text-luxury-white text-4xl"></i>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-4 gradient-text">Luxury Duplex Houses</h3>
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            The pinnacle of luxury living with private terraces, double-height spaces, and exclusive amenities for the most discerning homeowners.
+                        </p>
+                        
+                        <div class="space-y-3 mb-8">
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-home text-accent-400 w-5"></i>
+                                <span>Built-up Area: 2,500-3,000 sq ft</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-bed text-accent-400 w-5"></i>
+                                <span>4 Master Bedrooms + Study Room</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-tree text-accent-400 w-5"></i>
+                                <span>Private Terrace & Garden Space</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-stairs text-accent-400 w-5"></i>
+                                <span>Double Height Living Room</span>
+                            </div>
                         </div>
-                        <h3 class="text-3xl font-luxury font-bold text-luxury-white mb-3">3BHK LUXURY</h3>
-                        <p class="text-luxury-gold text-xl">SPACIOUS GRANDEUR</p>
-                    </div>
-                    <ul class="space-y-4 mb-8">
-                        <li class="flex items-center text-luxury-silver text-lg">
-                            <i class="fas fa-gem text-luxury-gold mr-4"></i>
-                            1800-2200 Sq.ft
-                        </li>
-                        <li class="flex items-center text-luxury-silver text-lg">
-                            <i class="fas fa-gem text-luxury-gold mr-4"></i>
-                            Master Suite
-                        </li>
-                        <li class="flex items-center text-luxury-silver text-lg">
-                            <i class="fas fa-gem text-luxury-gold mr-4"></i>
-                            Walk-in Closets
-                        </li>
-                        <li class="flex items-center text-luxury-silver text-lg">
-                            <i class="fas fa-gem text-luxury-gold mr-4"></i>
-                            Premium Amenities
-                        </li>
-                    </ul>
-                    <button class="luxury-btn-outline w-full py-4 rounded-2xl font-bold text-lg">
-                        VIEW DETAILS
-                    </button>
-                </div>
-
-                <!-- Luxury Duplex Estates -->
-                <div class="luxury-property-card rounded-3xl p-10 animate-on-scroll xl:col-span-3">
-                    <div class="text-center mb-8">
-                        <div
-                            class="w-24 h-24 bg-gradient-to-br from-luxury-gold to-luxury-silver rounded-3xl flex items-center justify-center mx-auto mb-6 animate-luxury-glow">
-                            <i class="fas fa-castle text-luxury-black text-4xl"></i>
+                        
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="text-3xl font-bold gradient-text">₹1.2-1.5 Cr</div>
+                            <div class="text-sm text-gray-400">Starting Price</div>
                         </div>
-                        <h3 class="text-3xl font-luxury font-bold text-luxury-white mb-3">LUXURY DUPLEX ESTATES</h3>
-                        <p class="text-luxury-gold text-xl">ULTIMATE PRESTIGE LIVING</p>
+                        
+                        <button class="w-full btn-primary text-primary-950 py-4 rounded-xl font-semibold text-lg property-btn" 
+                                data-property="Duplex">
+                            <i class="fas fa-info-circle mr-2"></i>
+                            View Details
+                        </button>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <ul class="space-y-4">
-                            <li class="flex items-center text-luxury-silver text-lg">
-                                <i class="fas fa-crown text-luxury-gold mr-4"></i>
-                                3000-4000 Sq.ft
-                            </li>
-                            <li class="flex items-center text-luxury-silver text-lg">
-                                <i class="fas fa-crown text-luxury-gold mr-4"></i>
-                                4-5 Bedrooms
-                            </li>
-                            <li class="flex items-center text-luxury-silver text-lg">
-                                <i class="fas fa-crown text-luxury-gold mr-4"></i>
-                                Private Garden
-                            </li>
-                        </ul>
-                        <ul class="space-y-4">
-                            <li class="flex items-center text-luxury-silver text-lg">
-                                <i class="fas fa-crown text-luxury-gold mr-4"></i>
-                                Double Height Living
-                            </li>
-                            <li class="flex items-center text-luxury-silver text-lg">
-                                <i class="fas fa-crown text-luxury-gold mr-4"></i>
-                                Rooftop Terrace
-                            </li>
-                            <li class="flex items-center text-luxury-silver text-lg">
-                                <i class="fas fa-crown text-luxury-gold mr-4"></i>
-                                Private Pool Option
-                            </li>
-                        </ul>
-                        <ul class="space-y-4">
-                            <li class="flex items-center text-luxury-silver text-lg">
-                                <i class="fas fa-crown text-luxury-gold mr-4"></i>
-                                3-Car Garage
-                            </li>
-                            <li class="flex items-center text-luxury-silver text-lg">
-                                <i class="fas fa-crown text-luxury-gold mr-4"></i>
-                                Home Automation
-                            </li>
-                            <li class="flex items-center text-luxury-silver text-lg">
-                                <i class="fas fa-crown text-luxury-gold mr-4"></i>
-                                Concierge Services
-                            </li>
-                        </ul>
-                    </div>
-                    <button class="luxury-btn w-full py-4 rounded-2xl font-bold text-lg mt-8">
-                        EXPLORE DUPLEX ESTATES
-                    </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Luxury Amenities Section -->
-    <section id="amenities" class="luxury-section-1 py-32">
-        <div class="max-w-8xl mx-auto px-6 lg:px-12">
+    <!-- Amenities Section -->
+    <section id="amenities" class="py-24 bg-primary-900 relative">
+        <div class="container mx-auto px-4">
             <div class="text-center mb-20 animate-on-scroll">
-                <h2 class="text-5xl md:text-7xl font-luxury font-bold luxury-text-gradient mb-8">
-                    WORLD-CLASS AMENITIES
+                <span class="inline-block bg-accent-500/20 text-accent-400 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    World-Class Amenities
+                </span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Luxury <span class="gradient-text">Lifestyle</span>
                 </h2>
-                <p class="text-2xl text-luxury-silver max-w-4xl mx-auto leading-relaxed">
-                    Indulge in an extraordinary lifestyle with our comprehensive collection of luxury amenities
-                    designed for the most discerning residents
+                <p class="text-xl opacity-80 max-w-3xl mx-auto leading-relaxed">
+                    Experience a lifestyle of unparalleled luxury with our comprehensive range of premium amenities designed for your comfort and convenience.
                 </p>
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
-                <div class="text-center animate-on-scroll">
-                    <div
-                        class="luxury-amenity-icon w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-swimming-pool text-luxury-black text-3xl"></i>
+                <!-- Amenity Items -->
+                <div class="text-center animate-on-scroll group">
+                    <div class="w-24 h-24 bg-gradient-to-br from-accent-400 to-accent-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-building text-primary-950 text-3xl"></i>
                     </div>
-                    <h4 class="text-luxury-white font-bold text-lg">INFINITY POOL</h4>
+                    <h3 class="font-bold mb-3 text-lg">Premium Clubhouse</h3>
+                    <p class="text-sm opacity-80 leading-relaxed">State-of-the-art clubhouse with recreational facilities</p>
                 </div>
-                <div class="text-center animate-on-scroll">
-                    <div
-                        class="luxury-amenity-icon w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-dumbbell text-luxury-black text-3xl"></i>
+
+                <div class="text-center animate-on-scroll group">
+                    <div class="w-24 h-24 bg-gradient-to-br from-accent-400 to-accent-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-swimming-pool text-primary-950 text-3xl"></i>
                     </div>
-                    <h4 class="text-luxury-white font-bold text-lg">PLATINUM GYM</h4>
+                    <h3 class="font-bold mb-3 text-lg">Swimming Pool</h3>
+                    <p class="text-sm opacity-80 leading-relaxed">Olympic-size pool with separate children's area</p>
                 </div>
-                <div class="text-center animate-on-scroll">
-                    <div
-                        class="luxury-amenity-icon w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-spa text-luxury-black text-3xl"></i>
+
+                <div class="text-center animate-on-scroll group">
+                    <div class="w-24 h-24 bg-gradient-to-br from-accent-400 to-accent-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-dumbbell text-primary-950 text-3xl"></i>
                     </div>
-                    <h4 class="text-luxury-white font-bold text-lg">LUXURY SPA</h4>
+                    <h3 class="font-bold mb-3 text-lg">Fitness Center</h3>
+                    <p class="text-sm opacity-80 leading-relaxed">Fully equipped modern gymnasium with trainers</p>
                 </div>
-                <div class="text-center animate-on-scroll">
-                    <div
-                        class="luxury-amenity-icon w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-tree text-luxury-black text-3xl"></i>
+
+                <div class="text-center animate-on-scroll group">
+                    <div class="w-24 h-24 bg-gradient-to-br from-accent-400 to-accent-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-child text-primary-950 text-3xl"></i>
                     </div>
-                    <h4 class="text-luxury-white font-bold text-lg">BOTANICAL GARDENS</h4>
+                    <h3 class="font-bold mb-3 text-lg">Kids Play Area</h3>
+                    <p class="text-sm opacity-80 leading-relaxed">Safe and engaging play area for children</p>
                 </div>
-                <div class="text-center animate-on-scroll">
-                    <div
-                        class="luxury-amenity-icon w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-shield-alt text-luxury-black text-3xl"></i>
+
+                <div class="text-center animate-on-scroll group">
+                    <div class="w-24 h-24 bg-gradient-to-br from-accent-400 to-accent-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-car text-primary-950 text-3xl"></i>
                     </div>
-                    <h4 class="text-luxury-white font-bold text-lg">PREMIUM SECURITY</h4>
+                    <h3 class="font-bold mb-3 text-lg">Covered Parking</h3>
+                    <p class="text-sm opacity-80 leading-relaxed">Secure covered parking for residents and guests</p>
                 </div>
-                <div class="text-center animate-on-scroll">
-                    <div
-                        class="luxury-amenity-icon w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-car text-luxury-black text-3xl"></i>
+
+                <div class="text-center animate-on-scroll group">
+                    <div class="w-24 h-24 bg-gradient-to-br from-accent-400 to-accent-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-bolt text-primary-950 text-3xl"></i>
                     </div>
-                    <h4 class="text-luxury-white font-bold text-lg">VALET PARKING</h4>
+                    <h3 class="font-bold mb-3 text-lg">Power Backup</h3>
+                    <p class="text-sm opacity-80 leading-relaxed">24/7 power backup for uninterrupted living</p>
                 </div>
-                <div class="text-center animate-on-scroll">
-                    <div
-                        class="luxury-amenity-icon w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-utensils text-luxury-black text-3xl"></i>
+
+                <div class="text-center animate-on-scroll group">
+                    <div class="w-24 h-24 bg-gradient-to-br from-accent-400 to-accent-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-seedling text-primary-950 text-3xl"></i>
                     </div>
-                    <h4 class="text-luxury-white font-bold text-lg">FINE DINING</h4>
+                    <h3 class="font-bold mb-3 text-lg">Landscaped Gardens</h3>
+                    <p class="text-sm opacity-80 leading-relaxed">Beautifully designed gardens and green spaces</p>
                 </div>
-                <div class="text-center animate-on-scroll">
-                    <div
-                        class="luxury-amenity-icon w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-gamepad text-luxury-black text-3xl"></i>
+
+                <div class="text-center animate-on-scroll group">
+                    <div class="w-24 h-24 bg-gradient-to-br from-accent-400 to-accent-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-shield-alt text-primary-950 text-3xl"></i>
                     </div>
-                    <h4 class="text-luxury-white font-bold text-lg">KIDS PARADISE</h4>
+                    <h3 class="font-bold mb-3 text-lg">24/7 Security</h3>
+                    <p class="text-sm opacity-80 leading-relaxed">Round-the-clock security with CCTV surveillance</p>
                 </div>
-                <div class="text-center animate-on-scroll">
-                    <div
-                        class="luxury-amenity-icon w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-users text-luxury-black text-3xl"></i>
+
+                <div class="text-center animate-on-scroll group">
+                    <div class="w-24 h-24 bg-gradient-to-br from-accent-400 to-accent-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-elevator text-primary-950 text-3xl"></i>
                     </div>
-                    <h4 class="text-luxury-white font-bold text-lg">GRAND CLUBHOUSE</h4>
+                    <h3 class="font-bold mb-3 text-lg">High-Speed Elevators</h3>
+                    <p class="text-sm opacity-80 leading-relaxed">Modern elevators in all residential towers</p>
                 </div>
-                <div class="text-center animate-on-scroll">
-                    <div
-                        class="luxury-amenity-icon w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-shopping-bag text-luxury-black text-3xl"></i>
+
+                <div class="text-center animate-on-scroll group">
+                    <div class="w-24 h-24 bg-gradient-to-br from-accent-400 to-accent-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-users text-primary-950 text-3xl"></i>
                     </div>
-                    <h4 class="text-luxury-white font-bold text-lg">LUXURY RETAIL</h4>
+                    <h3 class="font-bold mb-3 text-lg">Community Hall</h3>
+                    <p class="text-sm opacity-80 leading-relaxed">Spacious hall for events and celebrations</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Luxury Gallery Section -->
-    <section id="gallery" class="luxury-section-2 py-32">
-        <div class="max-w-8xl mx-auto px-6 lg:px-12">
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-primary-950 relative">
+        <div class="container mx-auto px-4">
             <div class="text-center mb-20 animate-on-scroll">
-                <h2 class="text-5xl md:text-7xl font-luxury font-bold luxury-text-gradient mb-8">
-                    EXCLUSIVE GALLERY
+                <span class="inline-block bg-accent-500/20 text-accent-400 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    Happy Residents
+                </span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    What Our <span class="gradient-text">Residents Say</span>
                 </h2>
-                <p class="text-2xl text-luxury-silver max-w-4xl mx-auto leading-relaxed">
-                    Step into the future of luxury living with our stunning visual showcase of
-                    Parshuram Bhuban's architectural excellence
+                <p class="text-xl opacity-80 max-w-3xl mx-auto leading-relaxed">
+                    Don't just take our word for it - hear from our satisfied residents who have made KNP Township their dream home.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="luxury-gallery-item animate-on-scroll">
-                    <div class="h-80 bg-gradient-to-br from-luxury-gold to-luxury-bronze rounded-3xl">
-                        <div class="luxury-gallery-overlay rounded-3xl">
-                            <div class="text-center text-luxury-black">
-                                <i class="fas fa-search-plus text-4xl mb-4"></i>
-                                <p class="font-bold text-xl">13-FLOOR TOWER</p>
-                            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-enhanced rounded-3xl p-8 hover-lift animate-on-scroll">
+                    <div class="flex mb-6">
+                        <div class="flex text-accent-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-8 leading-relaxed text-lg">
+                        "KNP Township has exceeded all our expectations. The quality of construction, amenities, and the overall living experience is absolutely fantastic. We're proud to call this place our home."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-accent-400 to-accent-600 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-primary-950 font-bold text-lg">RS</span>
+                        </div>
+                        <div>
+                            <div class="font-bold text-lg">Rajesh Sharma</div>
+                            <div class="text-accent-400 text-sm">3 BHK Owner</div>
                         </div>
                     </div>
                 </div>
-                <div class="luxury-gallery-item animate-on-scroll">
-                    <div class="h-80 bg-gradient-to-br from-royal-blue to-royal-purple rounded-3xl">
-                        <div class="luxury-gallery-overlay rounded-3xl">
-                            <div class="text-center text-luxury-black">
-                                <i class="fas fa-search-plus text-4xl mb-4"></i>
-                                <p class="font-bold text-xl">DUPLEX ESTATES</p>
-                            </div>
+
+                <div class="card-enhanced rounded-3xl p-8 hover-lift animate-on-scroll">
+                    <div class="flex mb-6">
+                        <div class="flex text-accent-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-8 leading-relaxed text-lg">
+                        "The location is perfect and the amenities are world-class. The swimming pool and gym are excellent. KNP Developer has truly created something special in Berhampur."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-accent-400 to-accent-600 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-primary-950 font-bold text-lg">PM</span>
+                        </div>
+                        <div>
+                            <div class="font-bold text-lg">Priya Mishra</div>
+                            <div class="text-accent-400 text-sm">Duplex Owner</div>
                         </div>
                     </div>
                 </div>
-                <div class="luxury-gallery-item animate-on-scroll">
-                    <div class="h-80 bg-gradient-to-br from-emerald to-luxury-gold rounded-3xl">
-                        <div class="luxury-gallery-overlay rounded-3xl">
-                            <div class="text-center text-luxury-black">
-                                <i class="fas fa-search-plus text-4xl mb-4"></i>
-                                <p class="font-bold text-xl">INFINITY POOL</p>
-                            </div>
+
+                <div class="card-enhanced rounded-3xl p-8 hover-lift animate-on-scroll">
+                    <div class="flex mb-6">
+                        <div class="flex text-accent-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
                     </div>
-                </div>
-                <div class="luxury-gallery-item animate-on-scroll">
-                    <div class="h-80 bg-gradient-to-br from-crimson to-luxury-bronze rounded-3xl">
-                        <div class="luxury-gallery-overlay rounded-3xl">
-                            <div class="text-center text-luxury-black">
-                                <i class="fas fa-search-plus text-4xl mb-4"></i>
-                                <p class="font-bold text-xl">BOTANICAL GARDENS</p>
-                            </div>
+                    <p class="text-gray-300 mb-8 leading-relaxed text-lg">
+                        "As first-time homebuyers, the team at KNP Developer made the entire process smooth and transparent. The 2.5 BHK apartment is perfect for our growing family."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-accent-400 to-accent-600 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-primary-950 font-bold text-lg">AK</span>
                         </div>
-                    </div>
-                </div>
-                <div class="luxury-gallery-item animate-on-scroll">
-                    <div class="h-80 bg-gradient-to-br from-luxury-silver to-luxury-gold rounded-3xl">
-                        <div class="luxury-gallery-overlay rounded-3xl">
-                            <div class="text-center text-luxury-black">
-                                <i class="fas fa-search-plus text-4xl mb-4"></i>
-                                <p class="font-bold text-xl">GRAND CLUBHOUSE</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="luxury-gallery-item animate-on-scroll">
-                    <div class="h-80 bg-gradient-to-br from-luxury-gold to-luxury-silver rounded-3xl">
-                        <div class="luxury-gallery-overlay rounded-3xl">
-                            <div class="text-center text-luxury-black">
-                                <i class="fas fa-search-plus text-4xl mb-4"></i>
-                                <p class="font-bold text-xl">LUXURY INTERIORS</p>
-                            </div>
+                        <div>
+                            <div class="font-bold text-lg">Amit Kumar</div>
+                            <div class="text-accent-400 text-sm">2.5 BHK Owner</div>
                         </div>
                     </div>
                 </div>
@@ -1661,354 +876,394 @@
         </div>
     </section>
 
-    <!-- Luxury Testimonials Section -->
-    <section class="luxury-section-3 py-32">
-        <div class="max-w-8xl mx-auto px-6 lg:px-12">
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-24 bg-primary-900 relative">
+        <div class="container mx-auto px-4">
             <div class="text-center mb-20 animate-on-scroll">
-                <h2 class="text-5xl md:text-7xl font-luxury font-bold luxury-text-gradient mb-8">
-                    PRESTIGIOUS TESTIMONIALS
+                <span class="inline-block bg-accent-500/20 text-accent-400 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    Project Gallery
+                </span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Visual <span class="gradient-text">Tour</span>
                 </h2>
-                <p class="text-2xl text-luxury-silver max-w-4xl mx-auto leading-relaxed">
-                    Discover what our distinguished residents say about their extraordinary living experience
+                <p class="text-xl opacity-80 max-w-3xl mx-auto leading-relaxed">
+                    Take a visual journey through our premium township and experience the luxury that awaits you.
                 </p>
             </div>
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
-                <div class="luxury-testimonial rounded-3xl p-10 animate-on-scroll">
-                    <div class="flex items-center mb-8">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-luxury-gold to-luxury-gold-light rounded-full flex items-center justify-center mr-6">
-                            <i class="fas fa-user text-luxury-black text-xl"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-luxury-white text-xl">Rajesh Agarwal</h4>
-                            <p class="text-luxury-gold">Business Magnate, Mumbai</p>
-                        </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="aspect-square relative rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-500 cursor-pointer animate-on-scroll group"
+                     onclick="openLightbox('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=600&q=80"
+                         alt="Building Exterior" class="w-full h-full object-cover" />
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <i class="fas fa-search-plus text-accent-400 text-4xl"></i>
                     </div>
-                    <div class="flex justify-center items-center gap-2 mb-6 flex-nowrap">
-                        <i class="fas fa-star text-luxury-gold text-xl"></i>
-                        <i class="fas fa-star text-luxury-gold text-xl"></i>
-                        <i class="fas fa-star text-luxury-gold text-xl"></i>
-                        <i class="fas fa-star text-luxury-gold text-xl"></i>
-                        <i class="fas fa-star text-luxury-gold text-xl"></i>
-                    </div>
-                    <p class="text-luxury-silver italic text-lg leading-relaxed">"KNP Developers has redefined luxury
-                        living. Parshuram Bhuban is not just a home; it's a statement of prestige and excellence."</p>
                 </div>
-                <div class="luxury-testimonial rounded-3xl p-10 animate-on-scroll">
-                    <div class="flex items-center mb-8">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-royal-blue to-royal-purple rounded-full flex items-center justify-center mr-6">
-                            <i class="fas fa-user text-luxury-white text-xl"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-luxury-white text-xl">Dr. Priya Sharma</h4>
-                            <p class="text-luxury-gold">Medical Professional, Delhi</p>
-                        </div>
+
+                <div class="aspect-square relative rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-500 cursor-pointer animate-on-scroll group"
+                     onclick="openLightbox('https://images.unsplash.com/photo-1571055107559-3e67626fa8be?auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1571055107559-3e67626fa8be?auto=format&fit=crop&w=600&q=80"
+                         alt="Modern Apartment" class="w-full h-full object-cover" />
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <i class="fas fa-search-plus text-accent-400 text-4xl"></i>
                     </div>
-                    <div class="flex flex-row flex-wrap justify-center gap-1 mb-6">
-                        <i class="fas fa-star text-luxury-gold text-xl"></i>
-                        <i class="fas fa-star text-luxury-gold text-xl"></i>
-                        <i class="fas fa-star text-luxury-gold text-xl"></i>
-                        <i class="fas fa-star text-luxury-gold text-xl"></i>
-                        <i class="fas fa-star text-luxury-gold text-xl"></i>
-                    </div>
-                    <p class="text-luxury-silver italic text-lg leading-relaxed">"The attention to detail and
-                        world-class amenities make this the most prestigious address in Eastern India. Absolutely
-                        exceptional!"</p>
                 </div>
-                <div class="luxury-testimonial rounded-3xl p-10 animate-on-scroll">
-                    <div class="flex items-center mb-8">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-emerald to-luxury-gold rounded-full flex items-center justify-center mr-6">
-                            <i class="fas fa-user text-luxury-white text-xl"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-luxury-white text-xl">Vikram Patel</h4>
-                            <p class="text-luxury-gold">Tech Entrepreneur, Bangalore</p>
-                        </div>
+
+                <div class="aspect-square relative rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-500 cursor-pointer animate-on-scroll group"
+                     onclick="openLightbox('https://images.unsplash.com/photo-1571508601936-de3bb91ac1e3?auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1571508601936-de3bb91ac1e3?auto=format&fit=crop&w=600&q=80"
+                         alt="Swimming Pool" class="w-full h-full object-cover" />
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <i class="fas fa-search-plus text-accent-400 text-4xl"></i>
                     </div>
-                    <div class="flex flex-row flex-wrap justify-center gap-1 mb-6">
-                        <i class="fas fa-star text-luxury-gold text-xl"></i>
-                        <i class="fas fa-star text-luxury-gold text-xl"></i>
-                        <i class="fas fa-star text-luxury-gold text-xl"></i>
-                        <i class="fas fa-star text-luxury-gold text-xl"></i>
-                        <i class="fas fa-star text-luxury-gold text-xl"></i>
+                </div>
+
+                <div class="aspect-square relative rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-500 cursor-pointer animate-on-scroll group"
+                     onclick="openLightbox('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80"
+                         alt="Garden Area" class="w-full h-full object-cover" />
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <i class="fas fa-search-plus text-accent-400 text-4xl"></i>
                     </div>
-                    <p class="text-luxury-silver italic text-lg leading-relaxed">"KNP Developers has created something
-                        truly extraordinary. The innovation and luxury standards are unmatched in the industry."</p>
+                </div>
+
+                <div class="aspect-square relative rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-500 cursor-pointer animate-on-scroll group"
+                     onclick="openLightbox('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80"
+                         alt="Modern Kitchen" class="w-full h-full object-cover" />
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <i class="fas fa-search-plus text-accent-400 text-4xl"></i>
+                    </div>
+                </div>
+
+                <div class="aspect-square relative rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-500 cursor-pointer animate-on-scroll group"
+                     onclick="openLightbox('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=600&q=80"
+                         alt="Luxury Bedroom" class="w-full h-full object-cover" />
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <i class="fas fa-search-plus text-accent-400 text-4xl"></i>
+                    </div>
+                </div>
+
+                <div class="aspect-square relative rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-500 cursor-pointer animate-on-scroll group"
+                     onclick="openLightbox('https://images.unsplash.com/photo-1540518614846-7eded47ee3b5?auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1540518614846-7eded47ee3b5?auto=format&fit=crop&w=600&q=80"
+                         alt="Gym Facility" class="w-full h-full object-cover" />
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <i class="fas fa-search-plus text-accent-400 text-4xl"></i>
+                    </div>
+                </div>
+
+                <div class="aspect-square relative rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-500 cursor-pointer animate-on-scroll group"
+                     onclick="openLightbox('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=800&q=80')">
+                    <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=600&q=80"
+                         alt="Clubhouse" class="w-full h-full object-cover" />
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <i class="fas fa-search-plus text-accent-400 text-4xl"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Luxury Contact Section -->
-    <section id="contact" class="luxury-section-1 py-32">
-        <div class="max-w-8xl mx-auto px-6 lg:px-12">
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-primary-950 relative">
+        <div class="container mx-auto px-4">
             <div class="text-center mb-20 animate-on-scroll">
-                <h2 class="text-5xl md:text-7xl font-luxury font-bold luxury-text-gradient mb-8">
-                    EXCLUSIVE CONSULTATION
+                <span class="inline-block bg-accent-500/20 text-accent-400 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    Get In Touch
+                </span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Ready to <span class="gradient-text">Move In?</span>
                 </h2>
-                <p class="text-2xl text-luxury-silver max-w-4xl mx-auto leading-relaxed">
-                    Experience the pinnacle of luxury living. Schedule your private consultation with our
-                    luxury real estate specialists today
+                <p class="text-xl opacity-80 max-w-3xl mx-auto leading-relaxed">
+                    Take the first step towards your dream home. Contact us today for site visits, bookings, and detailed information.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 xl:grid-cols-2 gap-20">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Contact Form -->
                 <div class="animate-on-scroll">
-                    <div class="luxury-form rounded-3xl p-12">
-                        <h3 class="text-3xl font-luxury font-bold text-luxury-white mb-8">BOOK EXCLUSIVE VIEWING</h3>
-                        <form class="space-y-8">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="card-enhanced rounded-3xl p-8">
+                        <h3 class="text-2xl font-bold mb-8 gradient-text flex items-center gap-3">
+                            <i class="fas fa-paper-plane"></i>
+                            Send us a Message
+                        </h3>
+                        
+                        <form class="space-y-6" id="contact-form">
+                            <div class="grid md:grid-cols-2 gap-6">
                                 <div>
-                                    <input type="text" class="luxury-input w-full px-6 py-4 rounded-2xl text-lg"
-                                        placeholder="Your Full Name">
+                                    <label class="block text-sm font-medium mb-3 text-accent-400">Full Name *</label>
+                                    <input type="text" name="name" required
+                                        class="w-full px-4 py-4 bg-primary-800/50 border border-primary-700 rounded-xl focus:border-accent-400 focus:outline-none transition-colors text-white placeholder-gray-400"
+                                        placeholder="Enter your full name">
                                 </div>
                                 <div>
-                                    <input type="tel" class="luxury-input w-full px-6 py-4 rounded-2xl text-lg"
-                                        placeholder="Contact Number">
+                                    <label class="block text-sm font-medium mb-3 text-accent-400">Phone Number *</label>
+                                    <input type="tel" name="phone" required
+                                        class="w-full px-4 py-4 bg-primary-800/50 border border-primary-700 rounded-xl focus:border-accent-400 focus:outline-none transition-colors text-white placeholder-gray-400"
+                                        placeholder="Enter your phone number">
                                 </div>
                             </div>
+
                             <div>
-                                <input type="email" class="luxury-input w-full px-6 py-4 rounded-2xl text-lg"
-                                    placeholder="Email Address">
+                                <label class="block text-sm font-medium mb-3 text-accent-400">Email Address *</label>
+                                <input type="email" name="email" required
+                                    class="w-full px-4 py-4 bg-primary-800/50 border border-primary-700 rounded-xl focus:border-accent-400 focus:outline-none transition-colors text-white placeholder-gray-400"
+                                    placeholder="Enter your email address">
                             </div>
+
                             <div>
-                                <select class="luxury-input w-full px-6 py-4 rounded-2xl text-lg">
-                                    <option>Select Your Preference</option>
-                                    <option>2BHK Luxury Apartment</option>
-                                    <option>2.5BHK Luxury Apartment</option>
-                                    <option>3BHK Luxury Apartment</option>
-                                    <option>Luxury Duplex Estate</option>
-                                    <option>13-Floor Tower Residence</option>
-                                    <option>Investment Opportunity</option>
+                                <label class="block text-sm font-medium mb-3 text-accent-400">Property Interest</label>
+                                <select name="property"
+                                    class="w-full px-4 py-4 bg-primary-800/50 border border-primary-700 rounded-xl focus:border-accent-400 focus:outline-none transition-colors text-white">
+                                    <option value="">Select Property Type</option>
+                                    <option value="2.5bhk">2.5 BHK Apartment</option>
+                                    <option value="3bhk">3 BHK Apartment</option>
+                                    <option value="duplex">Luxury Duplex</option>
                                 </select>
                             </div>
+
                             <div>
-                                <textarea rows="5" class="luxury-input w-full px-6 py-4 rounded-2xl text-lg"
-                                    placeholder="Your Message / Special Requirements"></textarea>
+                                <label class="block text-sm font-medium mb-3 text-accent-400">Message</label>
+                                <textarea name="message" rows="4"
+                                    class="w-full px-4 py-4 bg-primary-800/50 border border-primary-700 rounded-xl focus:border-accent-400 focus:outline-none transition-colors text-white placeholder-gray-400 resize-none"
+                                    placeholder="Tell us about your requirements..."></textarea>
                             </div>
+
                             <button type="submit"
-                                class="luxury-btn w-full px-8 py-5 rounded-2xl text-xl font-bold tracking-wide">
-                                <i class="fas fa-crown mr-3"></i>
-                                SCHEDULE EXCLUSIVE CONSULTATION
+                                class="w-full btn-primary text-primary-950 py-4 rounded-xl font-semibold text-lg flex items-center justify-center gap-2">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
                             </button>
                         </form>
                     </div>
                 </div>
 
-                <div class="space-y-12 animate-on-scroll">
-                    <div>
-                        <h3 class="text-4xl font-luxury font-bold luxury-text-gradient mb-12">CONNECT WITH EXCELLENCE
+                <!-- Contact Info -->
+                <div class="animate-on-scroll">
+                    <div class="card-enhanced rounded-3xl p-8">
+                        <h3 class="text-2xl font-bold mb-8 gradient-text flex items-center gap-3">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Contact Information
                         </h3>
+
                         <div class="space-y-8">
-                            <div class="flex items-start">
-                                <div
-                                    class="w-16 h-16 bg-gradient-to-br from-luxury-gold to-luxury-gold-light rounded-2xl flex items-center justify-center mr-6 flex-shrink-0">
-                                    <i class="fas fa-map-marker-alt text-luxury-black text-xl"></i>
+                            <div class="flex items-start gap-4">
+                                <div class="w-16 h-16 bg-gradient-to-br from-accent-400 to-accent-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-primary-950 text-xl"></i>
                                 </div>
                                 <div>
-                                    <p class="font-bold text-luxury-white text-xl mb-2">PROJECT LOCATION</p>
-                                    <p class="text-luxury-silver text-lg">Parshuram Bhuban Township<br>Premium Sector,
-                                        Berhampur<br>Odisha, India</p>
+                                    <h4 class="font-bold mb-2 text-lg text-accent-400">Address</h4>
+                                    <p class="text-gray-300 leading-relaxed">
+                                        KNP Township, Silk City Road<br>
+                                        Berhampur, Odisha 760001
+                                    </p>
                                 </div>
                             </div>
-                            <div class="flex items-center">
-                                <div
-                                    class="w-16 h-16 bg-gradient-to-br from-royal-blue to-royal-purple rounded-2xl flex items-center justify-center mr-6">
-                                    <i class="fas fa-phone text-luxury-white text-xl"></i>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-16 h-16 bg-gradient-to-br from-accent-400 to-accent-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-phone text-primary-950 text-xl"></i>
                                 </div>
                                 <div>
-                                    <p class="font-bold text-luxury-white text-xl mb-2">LUXURY HELPLINE</p>
-                                    <p class="text-luxury-silver text-lg">+91-XXXXX-XXXXX<br>+91-XXXXX-XXXXX</p>
+                                    <h4 class="font-bold mb-2 text-lg text-accent-400">Phone</h4>
+                                    <p class="text-gray-300 leading-relaxed">
+                                        <a href="tel:+919876543210" class="hover:text-accent-400 transition-colors">+91 9876543210</a><br>
+                                        <a href="tel:+919876543211" class="hover:text-accent-400 transition-colors">+91 9876543211</a>
+                                    </p>
                                 </div>
                             </div>
-                            <div class="flex items-center">
-                                <div
-                                    class="w-16 h-16 bg-gradient-to-br from-emerald to-luxury-gold rounded-2xl flex items-center justify-center mr-6">
-                                    <i class="fas fa-envelope text-luxury-white text-xl"></i>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-16 h-16 bg-gradient-to-br from-accent-400 to-accent-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-envelope text-primary-950 text-xl"></i>
                                 </div>
                                 <div>
-                                    <p class="font-bold text-luxury-white text-xl mb-2">EXCLUSIVE EMAIL</p>
-                                    <p class="text-luxury-silver text-lg">
-                                        luxury@knpdevelopers.com<br>sales@knpdevelopers.com</p>
+                                    <h4 class="font-bold mb-2 text-lg text-accent-400">Email</h4>
+                                    <p class="text-gray-300 leading-relaxed">
+                                        <a href="mailto:info@knpdeveloper.com" class="hover:text-accent-400 transition-colors">info@knpdeveloper.com</a><br>
+                                        <a href="mailto:sales@knpdeveloper.com" class="hover:text-accent-400 transition-colors">sales@knpdeveloper.com</a>
+                                    </p>
                                 </div>
                             </div>
-                            <div class="flex items-center">
-                                <div
-                                    class="w-16 h-16 bg-gradient-to-br from-crimson to-luxury-bronze rounded-2xl flex items-center justify-center mr-6">
-                                    <i class="fas fa-clock text-luxury-white text-xl"></i>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-16 h-16 bg-gradient-to-br from-accent-400 to-accent-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-clock text-primary-950 text-xl"></i>
                                 </div>
                                 <div>
-                                    <p class="font-bold text-luxury-white text-xl mb-2">CONSULTATION HOURS</p>
-                                    <p class="text-luxury-silver text-lg">Monday - Saturday: 9:00 AM - 8:00
-                                        PM<br>Sunday: 10:00 AM - 6:00 PM</p>
+                                    <h4 class="font-bold mb-2 text-lg text-accent-400">Office Hours</h4>
+                                    <p class="text-gray-300 leading-relaxed">
+                                        Mon - Sat: 9:00 AM - 7:00 PM<br>
+                                        Sunday: 10:00 AM - 5:00 PM
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Luxury Quick Actions -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <a href="tel:+91XXXXXXXXXX" class="luxury-btn text-center py-4 rounded-2xl font-bold text-lg">
-                            <i class="fas fa-phone mr-3"></i>
-                            CALL NOW
-                        </a>
-                        <a href="https://wa.me/91XXXXXXXXXX"
-                            class="luxury-btn-outline text-center py-4 rounded-2xl font-bold text-lg">
-                            <i class="fab fa-whatsapp mr-3"></i>
-                            WHATSAPP
-                        </a>
+                        <!-- Social Media -->
+                        <div class="mt-10 pt-8 border-t border-primary-700">
+                            <h4 class="font-bold mb-6 text-accent-400">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-12 h-12 bg-gradient-to-br from-accent-400 to-accent-600 rounded-xl flex items-center justify-center hover:scale-110 transition-transform">
+                                    <i class="fab fa-facebook-f text-primary-950 text-lg"></i>
+                                </a>
+                                <a href="#" class="w-12 h-12 bg-gradient-to-br from-accent-400 to-accent-600 rounded-xl flex items-center justify-center hover:scale-110 transition-transform">
+                                    <i class="fab fa-twitter text-primary-950 text-lg"></i>
+                                </a>
+                                <a href="#" class="w-12 h-12 bg-gradient-to-br from-accent-400 to-accent-600 rounded-xl flex items-center justify-center hover:scale-110 transition-transform">
+                                    <i class="fab fa-instagram text-primary-950 text-lg"></i>
+                                </a>
+                                <a href="#" class="w-12 h-12 bg-gradient-to-br from-accent-400 to-accent-600 rounded-xl flex items-center justify-center hover:scale-110 transition-transform">
+                                    <i class="fab fa-linkedin-in text-primary-950 text-lg"></i>
+                                </a>
+                                <a href="#" class="w-12 h-12 bg-gradient-to-br from-accent-400 to-accent-600 rounded-xl flex items-center justify-center hover:scale-110 transition-transform">
+                                    <i class="fab fa-youtube text-primary-950 text-lg"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Luxury Footer -->
-    <footer class="bg-luxury-black border-t border-luxury-gold/20 text-luxury-white py-20">
-        <div class="max-w-8xl mx-auto px-6 lg:px-12">
-            <div class="grid grid-cols-1 lg:grid-cols-4 gap-12">
-                <div class="lg:col-span-2">
-                    <h3 class="text-4xl font-luxury font-bold luxury-text-gradient mb-8">KNP DEVELOPERS</h3>
-                    <p class="text-luxury-silver mb-10 max-w-lg leading-relaxed text-lg">
-                        Pioneering the future of luxury real estate development in India. Creating extraordinary
-                        communities where architectural excellence meets unparalleled lifestyle experiences.
+    <!-- Footer -->
+    <footer class="bg-primary-900 py-16 border-t border-primary-800">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-accent-400 to-accent-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-building text-primary-950 text-xl"></i>
+                        </div>
+                        <div>
+                            <span class="text-2xl font-bold gradient-text">KNP Developer</span>
+                            <div class="text-xs text-gray-400">Premium Living</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Building dreams with premium quality construction and modern amenities in the heart of Berhampur. Your trusted partner for luxury living.
                     </p>
-                    <div class="flex space-x-6">
-                        <a href="#"
-                            class="w-14 h-14 bg-gradient-to-br from-luxury-gold to-luxury-gold-light rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300">
-                            <i class="fab fa-facebook-f text-luxury-black text-xl"></i>
-                        </a>
-                        <a href="#"
-                            class="w-14 h-14 bg-gradient-to-br from-royal-blue to-royal-purple rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300">
-                            <i class="fab fa-instagram text-luxury-white text-xl"></i>
-                        </a>
-                        <a href="#"
-                            class="w-14 h-14 bg-gradient-to-br from-emerald to-luxury-gold rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300">
-                            <i class="fab fa-youtube text-luxury-white text-xl"></i>
-                        </a>
-                        <a href="#"
-                            class="w-14 h-14 bg-gradient-to-br from-crimson to-luxury-bronze rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300">
-                            <i class="fab fa-linkedin-in text-luxury-white text-xl"></i>
-                        </a>
+                    <div class="text-sm text-gray-400 bg-primary-800/50 p-3 rounded-lg">
+                        <i class="fas fa-certificate text-accent-400 mr-2"></i>
+                        RERA Reg. No: ORERA/BR/2024/001234
                     </div>
                 </div>
+
                 <div>
-                    <h4 class="text-2xl font-bold mb-8 text-luxury-gold">QUICK NAVIGATION</h4>
-                    <ul class="space-y-4">
-                        <li><a href="#home"
-                                class="text-luxury-silver hover:text-luxury-gold transition-all duration-300 hover:translate-x-2 text-lg">HOME</a>
-                        </li>
-                        <li><a href="#about"
-                                class="text-luxury-silver hover:text-luxury-gold transition-all duration-300 hover:translate-x-2 text-lg">ABOUT</a>
-                        </li>
-                        <li><a href="#properties"
-                                class="text-luxury-silver hover:text-luxury-gold transition-all duration-300 hover:translate-x-2 text-lg">PROPERTIES</a>
-                        </li>
-                        <li><a href="#amenities"
-                                class="text-luxury-silver hover:text-luxury-gold transition-all duration-300 hover:translate-x-2 text-lg">AMENITIES</a>
-                        </li>
-                        <li><a href="#gallery"
-                                class="text-luxury-silver hover:text-luxury-gold transition-all duration-300 hover:translate-x-2 text-lg">GALLERY</a>
-                        </li>
-                        <li><a href="#contact"
-                                class="text-luxury-silver hover:text-luxury-gold transition-all duration-300 hover:translate-x-2 text-lg">CONTACT</a>
-                        </li>
+                    <h4 class="font-bold mb-6 text-accent-400">Quick Links</h4>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><a href="#home" class="hover:text-accent-400 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs"></i>Home</a></li>
+                        <li><a href="#about" class="hover:text-accent-400 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs"></i>About</a></li>
+                        <li><a href="#properties" class="hover:text-accent-400 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs"></i>Properties</a></li>
+                        <li><a href="#amenities" class="hover:text-accent-400 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs"></i>Amenities</a></li>
+                        <li><a href="#contact" class="hover:text-accent-400 transition-colors flex items-center gap-2"><i class="fas fa-chevron-right text-xs"></i>Contact</a></li>
                     </ul>
                 </div>
+
                 <div>
-                    <h4 class="text-2xl font-bold mb-8 text-luxury-gold">LUXURY RESIDENCES</h4>
-                    <ul class="space-y-4 text-luxury-silver">
-                        <li class="text-lg">2BHK Luxury Apartments</li>
-                        <li class="text-lg">2.5BHK Luxury Apartments</li>
-                        <li class="text-lg">3BHK Luxury Apartments</li>
-                        <li class="text-lg">Luxury Duplex Estates</li>
-                        <li class="text-lg">13-Floor Tower Residences</li>
+                    <h4 class="font-bold mb-6 text-accent-400">Properties</h4>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><a href="#" class="hover:text-accent-400 transition-colors flex items-center gap-2"><i class="fas fa-home text-xs"></i>2.5 BHK Apartments</a></li>
+                        <li><a href="#" class="hover:text-accent-400 transition-colors flex items-center gap-2"><i class="fas fa-home text-xs"></i>3 BHK Apartments</a></li>
+                        <li><a href="#" class="hover:text-accent-400 transition-colors flex items-center gap-2"><i class="fas fa-building text-xs"></i>Luxury Duplex</a></li>
+                        <li><a href="#" class="hover:text-accent-400 transition-colors flex items-center gap-2"><i class="fas fa-calendar text-xs"></i>Site Visit</a></li>
+                        <li><a href="#" class="hover:text-accent-400 transition-colors flex items-center gap-2"><i class="fas fa-download text-xs"></i>Brochure</a></li>
                     </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold mb-6 text-accent-400">Contact Info</h4>
+                    <div class="space-y-4 text-gray-300 text-sm">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt text-accent-400 mt-1"></i>
+                            <div>
+                                <p>KNP Township, Silk City Road</p>
+                                <p>Berhampur, Odisha 760001</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-phone text-accent-400"></i>
+                            <p>+91 9876543210</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-envelope text-accent-400"></i>
+                            <p>info@knpdeveloper.com</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="border-t border-luxury-gold/20 mt-16 pt-12 text-center">
-                <p class="text-luxury-silver text-lg">&copy; 2024 KNP Developers. All rights reserved. | Parshuram
-                    Bhuban - India's Most Prestigious Township</p>
+
+            <div class="border-t border-primary-800 pt-8 text-center">
+                <p class="text-gray-400 mb-4">
+                    &copy; 2024 KNP Developer. All rights reserved. | Designed with <i class="fas fa-heart text-red-500"></i> for premium living
+                </p>
+                <div class="flex justify-center space-x-6 text-sm text-gray-500">
+                    <a href="#" class="hover:text-accent-400 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-accent-400 transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-accent-400 transition-colors">Disclaimer</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Luxury WhatsApp Floating Button -->
-    <a href="https://wa.me/91XXXXXXXXXX"
-        class="fixed bottom-8 right-8 w-20 h-20 bg-green-500 rounded-full flex items-center justify-center text-white text-3xl shadow-luxury hover:scale-110 transition-all duration-300 z-50 animate-luxury-pulse">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="absolute top-6 right-6 text-white text-4xl cursor-pointer z-10 hover:text-accent-400 transition-colors"
+            onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="/placeholder.svg" alt="" class="animate-fade-in">
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-14 h-14 bg-gradient-to-br from-accent-400 to-accent-600 rounded-full flex items-center justify-center text-primary-950 text-xl opacity-0 invisible transition-all duration-300 hover:scale-110 z-30">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50 opacity-0 invisible transition-all duration-300">
+        <div class="card-enhanced rounded-3xl p-8 max-w-md mx-4 text-center transform scale-95 transition-transform duration-300">
+            <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                <i class="fas fa-check text-white text-3xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-4 gradient-text">Thank You!</h3>
+            <p class="text-gray-300 mb-6">Your message has been sent successfully. We'll get back to you within 24 hours.</p>
+            <button onclick="closeSuccessModal()" class="btn-primary text-primary-950 px-6 py-3 rounded-xl font-semibold">
+                Close
+            </button>
+        </div>
+    </div>
 
     <script>
-        // Mobile menu toggle - Fixed version
-        const luxuryMobileMenuButton = document.getElementById('luxuryMobileMenuButton');
-        const luxuryMobileMenu = document.getElementById('luxuryMobileMenu');
+        // Loading screen
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                document.getElementById('loading-screen').style.opacity = '0';
+                setTimeout(() => {
+                    document.getElementById('loading-screen').style.display = 'none';
+                }, 500);
+            }, 1000);
+        });
 
-        luxuryMobileMenuButton.addEventListener('click', (e) => {
-            e.preventDefault();
-            e.stopPropagation();
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerLines = document.querySelectorAll('.hamburger-line');
 
-            // Toggle menu visibility
-            luxuryMobileMenu.classList.toggle('hidden');
-            luxuryMobileMenu.classList.toggle('show');
-
-            // Toggle button appearance
-            luxuryMobileMenuButton.classList.toggle('menu-open');
-
-            // Change icon
-            const icon = luxuryMobileMenuButton.querySelector('i');
-            if (luxuryMobileMenu.classList.contains('hidden')) {
-                icon.className = 'fas fa-bars text-xl';
-                document.body.style.overflow = '';
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            
+            // Animate hamburger to X
+            if (mobileMenu.classList.contains('hidden')) {
+                hamburgerLines[0].style.transform = 'rotate(0deg) translateY(0px)';
+                hamburgerLines[1].style.opacity = '1';
+                hamburgerLines[2].style.transform = 'rotate(0deg) translateY(0px)';
             } else {
-                icon.className = 'fas fa-times text-xl';
-                document.body.style.overflow = 'hidden';
-            }
-        });
-
-        // Close menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!luxuryMobileMenu.contains(e.target) && !luxuryMobileMenuButton.contains(e.target)) {
-                luxuryMobileMenu.classList.add('hidden');
-                luxuryMobileMenu.classList.remove('show');
-                luxuryMobileMenuButton.classList.remove('menu-open');
-
-                const icon = luxuryMobileMenuButton.querySelector('i');
-                icon.className = 'fas fa-bars text-xl';
-                document.body.style.overflow = '';
-            }
-        });
-
-        // Close menu when clicking on links
-        luxuryMobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                luxuryMobileMenu.classList.add('hidden');
-                luxuryMobileMenu.classList.remove('show');
-                luxuryMobileMenuButton.classList.remove('menu-open');
-
-                const icon = luxuryMobileMenuButton.querySelector('i');
-                icon.className = 'fas fa-bars text-xl';
-                document.body.style.overflow = '';
-            });
-        });
-
-        // Luxury Progress bar
-        window.addEventListener('scroll', () => {
-            const scrollTop = document.documentElement.scrollTop;
-            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrollPercent = (scrollTop / scrollHeight) * 100;
-            document.getElementById('luxuryProgressBar').style.width = scrollPercent + '%';
-        });
-
-        // Luxury Navigation scroll effect
-        window.addEventListener('scroll', function () {
-            const nav = document.getElementById('luxuryNavbar');
-            if (window.scrollY > 100) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
+                hamburgerLines[0].style.transform = 'rotate(45deg) translateY(8px)';
+                hamburgerLines[1].style.opacity = '0';
+                hamburgerLines[2].style.transform = 'rotate(-45deg) translateY(-8px)';
             }
         });
 
@@ -2022,150 +1277,239 @@
                         behavior: 'smooth',
                         block: 'start'
                     });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                    hamburgerLines[0].style.transform = 'rotate(0deg) translateY(0px)';
+                    hamburgerLines[1].style.opacity = '1';
+                    hamburgerLines[2].style.transform = 'rotate(0deg) translateY(0px)';
                 }
             });
         });
 
-        // Luxury Scroll animations
-        const luxuryObserverOptions = {
+        // Navbar background change on scroll
+        const navbar = document.getElementById('navbar');
+        const backToTopBtn = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('glass-dark');
+            } else {
+                navbar.classList.remove('glass-dark');
+            }
+
+            // Back to top button
+            if (window.scrollY > 500) {
+                backToTopBtn.classList.remove('opacity-0', 'invisible');
+            } else {
+                backToTopBtn.classList.add('opacity-0', 'invisible');
+            }
+        });
+
+        // Back to top functionality
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Animate on scroll with Intersection Observer
+        const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
         };
 
-        const luxuryObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('animated');
+                    entry.target.classList.add('animate');
                 }
             });
-        }, luxuryObserverOptions);
+        }, observerOptions);
 
-        // Observe all elements with animate-on-scroll class
-        document.querySelectorAll('.animate-on-scroll').forEach(el => {
-            luxuryObserver.observe(el);
+        document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+            observer.observe(el);
         });
 
-        // Luxury Stats counter animation
-        function luxuryAnimateCounter(element, target) {
-            let current = 0;
-            const increment = target / 100;
-            const timer = setInterval(() => {
-                current += increment;
-                if (current >= target) {
-                    current = target;
-                    clearInterval(timer);
-                }
-                element.textContent = Math.floor(current);
-            }, 30);
+        // Lightbox functionality
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            
+            lightboxImg.src = src;
+            lightbox.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+            
+            setTimeout(() => {
+                lightbox.style.opacity = '1';
+            }, 10);
         }
 
-        // Animate counters when they come into view
-        const luxuryStatsObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const counter = entry.target;
-                    const target = parseInt(counter.getAttribute('data-count'));
-                    luxuryAnimateCounter(counter, target);
-                    luxuryStatsObserver.unobserve(counter);
-                }
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.style.opacity = '0';
+            setTimeout(() => {
+                lightbox.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }, 300);
+        }
+
+        // Close lightbox on click outside image
+        document.getElementById('lightbox').addEventListener('click', function (e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+
+        // Close lightbox with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        // Property button interactions
+        document.querySelectorAll('.property-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const property = this.getAttribute('data-property');
+                alert(`Thank you for your interest in our ${property} apartments! Please fill out the contact form below for more details.`);
+                document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
             });
         });
 
-        document.querySelectorAll('.luxury-stats').forEach(counter => {
-            luxuryStatsObserver.observe(counter);
-        });
-
-        // Form submission
-        document.querySelector('form').addEventListener('submit', function (e) {
+        // Contact form handling with enhanced validation
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
             e.preventDefault();
-            alert('Thank you for your interest in Parshuram Bhuban! Our luxury real estate specialist will contact you within 24 hours to schedule your exclusive consultation.');
+
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+
+            // Enhanced validation
+            if (!data.name || data.name.length < 2) {
+                showAlert('Please enter a valid name (at least 2 characters).', 'error');
+                return;
+            }
+
+            if (!data.phone || !/^[6-9]\d{9}$/.test(data.phone)) {
+                showAlert('Please enter a valid 10-digit Indian mobile number.', 'error');
+                return;
+            }
+
+            if (!data.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) {
+                showAlert('Please enter a valid email address.', 'error');
+                return;
+            }
+
+            // Show loading state
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<div class="loading-spinner mr-2"></div>Sending...';
+            submitBtn.disabled = true;
+
+            // Simulate form submission
+            setTimeout(() => {
+                showSuccessModal();
+                this.reset();
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
         });
 
-        // Add luxury parallax effect to hero section
+        // Success modal functions
+        function showSuccessModal() {
+            const modal = document.getElementById('success-modal');
+            modal.classList.remove('opacity-0', 'invisible');
+            modal.querySelector('.card-enhanced').classList.remove('scale-95');
+        }
+
+        function closeSuccessModal() {
+            const modal = document.getElementById('success-modal');
+            modal.classList.add('opacity-0', 'invisible');
+            modal.querySelector('.card-enhanced').classList.add('scale-95');
+        }
+
+        // Alert function
+        function showAlert(message, type = 'info') {
+            const alertDiv = document.createElement('div');
+            alertDiv.className = `fixed top-24 right-4 z-50 p-4 rounded-xl max-w-sm transform translate-x-full transition-transform duration-300 ${
+                type === 'error' ? 'bg-red-500' : 'bg-green-500'
+            } text-white`;
+            alertDiv.innerHTML = `
+                <div class="flex items-center gap-3">
+                    <i class="fas fa-${type === 'error' ? 'exclamation-triangle' : 'check-circle'}"></i>
+                    <span>${message}</span>
+                </div>
+            `;
+            
+            document.body.appendChild(alertDiv);
+            
+            setTimeout(() => {
+                alertDiv.style.transform = 'translateX(0)';
+            }, 100);
+            
+            setTimeout(() => {
+                alertDiv.style.transform = 'translateX(100%)';
+                setTimeout(() => {
+                    document.body.removeChild(alertDiv);
+                }, 300);
+            }, 4000);
+        }
+
+        // Add parallax effect to hero section
         window.addEventListener('scroll', () => {
             const scrolled = window.pageYOffset;
-            const parallax = document.querySelector('#home');
-            const speed = scrolled * 0.2;
-
+            const parallax = document.querySelector('.hero-bg');
             if (parallax) {
+                const speed = scrolled * 0.5;
                 parallax.style.transform = `translateY(${speed}px)`;
             }
         });
 
-        // Luxury loading animation
-        window.addEventListener('load', () => {
-            document.body.classList.add('loaded');
+        // Add active nav link highlighting
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-accent-400');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('text-accent-400');
+                }
+            });
         });
 
-        // Add luxury mouse move effect
-        document.addEventListener('mousemove', (e) => {
-            const hero = document.querySelector('#home');
-            const x = e.clientX / window.innerWidth;
-            const y = e.clientY / window.innerHeight;
-
-            hero.style.backgroundPosition = `${x * 100}% ${y * 100}%`;
-        });
-
-        // Mobile-specific optimizations
-        function isMobile() {
-            return window.innerWidth <= 768;
-        }
-
-        // Disable heavy animations on mobile
-        if (isMobile()) {
-            document.querySelectorAll('.animate-luxury-float, .animate-luxury-bounce, .animate-luxury-rotate').forEach(el => {
-                el.style.animation = 'none';
-            });
-
-            // Hide floating elements on mobile
-            document.querySelectorAll('.luxury-floating-elements').forEach(el => {
-                el.style.display = 'none';
-            });
-        }
-
-        // Touch-friendly interactions
-        if ('ontouchstart' in window) {
-            document.body.classList.add('touch-device');
-
-            // Improve touch interactions for cards
-            document.querySelectorAll('.luxury-property-card, .luxury-testimonial, .luxury-gallery-item').forEach(card => {
-                card.addEventListener('touchstart', function () {
-                    this.style.transform = 'scale(0.98)';
-                });
-
-                card.addEventListener('touchend', function () {
-                    this.style.transform = '';
-                });
-            });
-        }
-
-        // Optimize scroll performance on mobile
-        let ticking = false;
-
-        function updateScrollEffects() {
-            // Simplified scroll effects for mobile
-            if (isMobile()) {
-                const scrolled = window.pageYOffset;
-                const nav = document.getElementById('luxuryNavbar');
-
-                if (scrolled > 50) {
-                    nav.classList.add('scrolled');
-                } else {
-                    nav.classList.remove('scrolled');
+        // Add typing effect to hero title (optional enhancement)
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
                 }
             }
-
-            ticking = false;
+            type();
         }
 
-        window.addEventListener('scroll', function () {
-            if (!ticking) {
-                requestAnimationFrame(updateScrollEffects);
-                ticking = true;
+        // Initialize typing effect after page load
+        setTimeout(() => {
+            const heroTitle = document.querySelector('#home h1');
+            if (heroTitle) {
+                const originalText = heroTitle.textContent;
+                typeWriter(heroTitle, originalText, 50);
             }
-        });
-
-
+        }, 1500);
     </script>
 </body>
 
